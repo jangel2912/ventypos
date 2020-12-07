@@ -1,0 +1,818 @@
+/**
+ *
+ * -------------------------------------------
+ * Basic template CSS file
+ * -------------------------------------------
+ *
+ **/
+ 
+/*
+ *
+ * 1. Global elements
+ *
+ *
+------------------------------------ */
+ 
+/* 1.1. Base document elements
+==================================== */
+
+* {
+	outline: none!important;
+}
+
+html {
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+body { 
+	background: #fff;
+	color: #666;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100%;
+	padding: 0;
+	-ms-word-wrap: break-word;
+		word-wrap: break-word;
+}
+
+body[data-mobile="true"] #main-menu-mobile select {
+    font-size: 50px;
+}
+
+/* 1.2. Base typography elements
+==================================== */
+
+#toolbar_wrapper {
+background: none no-repeat fixed center 0 #009d12!important;
+display: block;
+height: 35px;
+width: 100%;
+color: #FFFFFF;
+}
+#toolbar {
+margin-left: 16%;
+margin-right: 18%;
+margin-top: -2px!important;
+}
+.floatleft {
+float: left;
+}
+.floatright {
+float: right;
+}
+
+a,
+#gk-mainbody a:active,
+#gk-mainbody a:focus,
+#gk-mainbody a:hover,
+#gk-mainbody header h1 a,
+#gk-mainbody header h2 a {
+	color: #363636;
+	-webkit-transition: color 0.2s linear;
+	   -moz-transition: color 0.2s linear;
+	     -o-transition: color 0.2s linear;
+	        transition: color 0.2s linear;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus,
+#gk-mainbody a,
+#gk-mainbody header h1 a:active,
+#gk-mainbody header h1 a:focus,
+#gk-mainbody header h1 a:hover,
+#gk-mainbody header h2 a:active,
+#gk-mainbody header h2 a:focus,
+#gk-mainbody header h2 a:hover,
+#gk-sidebar .box a:hover {
+	color: #4c90fe;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333;
+	font-weight: 400;
+	letter-spacing: -1px;	
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 52px;
+}
+
+h2,
+.page-title {
+	font-size: 42px;
+	margin-bottom: 34px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 13px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul li,
+ol li {
+	line-height: 2.0;
+}
+
+p {
+	margin: 0.5em 0 1.5em;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+.box ul li,
+.box ol li {
+	border-top: 1px solid #eee;
+}
+
+.box ul li:first-child,
+.box ol li:first-child {
+	border-top: none;
+}
+
+.box ul ul,
+.box ol ol {
+	border-top: 1px solid #eee;
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+/* 1.3. Base form elements
+==================================== */
+
+/* buttons */
+.btn,
+button,
+.readon,
+.nav-btn a,
+.more-link,
+a.gk-button,
+input[type="button"],
+input[type="submit"] {
+	background: #4c90fe;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff!important;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	height: 42px;
+	line-height: 42px;
+	margin: 0 5px 2px 2px;
+	padding: 0 20px;
+	text-align: center;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out
+}
+
+.btn,
+.gk-button,
+a.gk-button {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	height: 50px;
+	line-height: 51px;
+	padding: 0 20px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled],
+.nav-btn a:active,
+.nav-btn a:focus,
+.nav-btn a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+button.disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled,
+a.gk-button:hover,
+a.gk-button:active,
+a.gk-button.active,
+a.gk-button.disabled,
+a.gk-button[disabled],
+.readon:hover,
+.readon:active,
+.readon:focus,
+.btn:focus,
+button:focus,
+a.gk-button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+.more-link:active,
+.more-link:focus,
+.more-link:hover {
+ 	background: #fec64d;
+ 	color: #fff;
+}
+
+/* input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="www"],
+input[type="tel"],
+textarea  {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 16px;
+	font-weight: 300;
+	text-align:left;
+	color: #848484;
+	height: 46px;
+	width:  406px;
+	max-width: 100%!important;
+	}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+	max-width: 100%!important;
+	padding: 24px
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+	background: #fffef4;
+}
+
+label {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0 0 4px 0;
+}
+
+select {
+	height: inherit;
+	max-width: 100%;
+	padding: 6px
+}
+
+/* 1.4. Base other elements
+==================================== */
+
+article {
+	margin: 0;
+}
+
+.tag-page article,
+.category-page article,
+.search-page article,
+.archive article,
+.page-template-template-latest-php article,
+.home .gk-is-homepage article,
+.home #gk-mainbody article {
+	margin: 0 0 80px 0;
+}
+
+.tag-page > article,
+.search-page > article {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	min-height: auto!important;
+	padding: 0 0 0 20px;
+	width: 50%;
+}
+
+#gk-mainbody.tag-page > article h2,
+#gk-mainbody.search-page > article h2 {
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.tag-page > hr + article,
+.tag-page > article:first-child,
+.search-page > hr + article,
+.search-page > #searchform + article {
+	padding: 0 20px 0 0;
+}
+
+.tag-page > hr,
+.search-page > hr {
+	border: none;
+	clear: both;
+}
+
+/* 1.5. Base CSS classes
+==================================== */
+
+/*
+ *
+ * 2. Template containers
+ *
+ *
+------------------------------------ */
+
+.gk-page-wrap + div,
+.gk-page-wrap + #gk-footer {
+	margin-top: 50px;
+}
+
+.gk-page {
+	margin: 0 auto;
+	width: 100%; 
+}
+
+#gk-mainbody-columns {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+#gk-mainbody-columns > section {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	padding: 0;
+}
+
+#gk-mainbody-columns > aside {
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	padding: 0 0 0 80px;
+}
+
+#gk-mainbody-columns.gk-column-left > section {
+	float: right;
+}
+
+#gk-mainbody-columns.gk-column-left > aside {
+	float: left;
+	padding: 0 80px 0 0;
+}
+
+/*
+ *
+ * 3. Template structure
+ *
+ *
+------------------------------------ */
+ 
+/* 3.1. Top
+==================================== */
+
+#gk-top {
+	overflow: hidden;
+	padding: 24px 14px;
+}
+
+/* 3.2. Header
+==================================== */
+
+#gk-head {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#gk-head:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#gk-head h1 {
+	margin: 0;
+}
+
+#gk-head + .gk-is-homepage {
+	margin-top: 70px;
+}
+
+/* Logo */
+
+#gk-header-nav h1 {
+    float: left;
+}
+
+a.cssLogo {
+	height: 44px;
+	margin: 24px 30px 0 0;
+	padding: 0;
+	text-indent: -9999px;
+	text-shadow: none;
+	width: 140px;
+	display: block;
+	float: left;
+}
+
+a.cssLogo,
+#gk-menu-wrap a.cssLogo {
+	background: transparent url('../images/style1/logo_white_bg.png') no-repeat 0 0;
+	/* You can specify there logo size and background */
+	height: 44px;
+	margin-top: 13px;
+	width: 198px;
+}
+
+.imageBg #gk-head a.cssLogo {
+	background: transparent url('../images/style1/logo_normal.png') no-repeat 0 0;
+	margin-top: 3px;
+	width:400px;
+}
+
+#gk-head a.textLogo {
+	color: #fff;
+	display: block;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 24px;
+	height: auto;
+	margin: 14px 0 0 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	text-indent: 0;
+}
+
+#gk-head a.textLogo small {
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+}
+
+#gk-menu-wrap a.textLogo {
+	margin-top: 2px;
+}
+
+#gk-head a.textLogo,
+#gk-head a.textLogo small {
+	color: #333;
+}
+
+.imageBg a.textLogo,
+.imageBg a.textLogo small,
+#gk-menu-wrap a.textLogo,
+#gk-menu-wrap a.textLogo small {
+	color: #fff;
+}
+
+#gk-head a.imageLogo,
+#gk-head a.imageLogo img {
+	display: block;
+	margin: 0;
+}
+
+/* Header */
+
+#gk-head {
+	background: #f8f8f8;
+	border-bottom: 1px solid #eee;
+}
+
+#gk-head .box{
+	margin: 0;
+	padding: 0;
+}
+
+#gk-header-mod {
+	clear: both;
+}
+
+.imageBg #gk-head {
+	background: #000 url('../images/header.jpg') no-repeat center 0;
+	background-attachment: fixed;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.admin-bar.imageBg #gk-head {
+	background-position: center 28px;
+}
+
+/* 3.3. Content
+==================================== */
+
+section.intro {
+	font-size: 110%;
+	padding: 0;
+}
+
+.box::after,
+article::after,
+#respond::after,
+#gk-top1::after,
+#gk-top2::after,
+#gk-bottom1::after,
+#gk-bottom2::after,
+#gk-bottom3::after,
+#gk-bottom4::after,
+#gk-bottom5::after,
+#gk-bottom6::after,
+#gk-mainbody::after,
+#gk-mainbody-columns::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section.content::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#gk-mainbody-top {
+	padding: 0 0 30px 0;
+}
+
+#gk-mainbody-bottom {
+	padding: 30px 0 0 0;
+}
+
+/* 3.4. Sidebar
+==================================== */
+
+/* 3.5. Bottom
+==================================== */
+
+#gk-bottom1,
+#gk-bottom3,
+#gk-bottom5 {
+	background: #f8f8f8;
+}
+
+#gk-bottom1, 
+#gk-bottom2, 
+#gk-bottom3, 
+#gk-bottom4, 
+#gk-bottom5, 
+#gk-bottom6 {
+	border-top: 1px solid #eee;
+	padding: 40px 0;
+}
+
+/* 3.6. Footer
+==================================== */
+
+#gk-footer {
+	border-top: 1px solid #ddd;
+	clear: both;	
+	color: #888;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+#gk-footer > div {
+	padding: 20px 0;
+}
+
+#gk-footer a {
+	color: #666;
+}
+
+#gk-footer a:active,
+#gk-footer a:focus,
+#gk-footer a:hover {
+	color: #4c90fe;
+}
+
+#footer-menu {
+	float: left;
+	line-height: 32px;
+	margin: 0;
+}
+
+#footer-menu li {
+	float: left;
+	margin-right: 10px;
+}
+
+#footer-menu ul {
+	display: none;
+}
+
+#gk-footer .gk-copyrights {
+	float: right;
+	line-height: 32px;
+}
+
+#gk-style-area {
+	clear: both;
+	margin: 20px 0;
+	text-align: center;
+}
+
+#gk-footer .gk-framework-logo {
+	clear: both;
+	display: block;
+	margin: 0 auto!important;
+	padding: 32px 0 16px 0!important;
+}
+
+/* Style switcher */
+#gk-style-area {
+	clear: both;
+	display: block;
+	line-height: 10px;
+	margin: 20px 0 40px 0;
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+
+#gk-style-area a {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;
+	margin: 15px 0 0 5px;
+	text-indent: -9999px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-o-transition: -o-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+	width: 10px;
+}
+
+#gk-style-area a:first-child {
+	margin-left: 0;
+}
+
+#gk-style-area a:hover {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+#gk-color1 {
+	background: #4c90fe;
+}
+
+#gk-color2 {
+	background: #99c24b;
+}
+
+#gk-color3 {
+	background: #de5643;
+}
+
+/*
+ *
+ * 4. Widget styles
+ *
+ *
+------------------------------------ */
+ 
+/* 4.1. Base style
+==================================== */
+
+.box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+#gk-mainbody-top .box,
+#gk-mainbody-bottom .box {
+	padding: 0;
+}
+
+/* 4.2. Base style for other areas
+==================================== */
+
+#gk-top1 .box,
+#gk-top2 .box,
+#gk-bottom1 .box,
+#gk-bottom2 .box,
+#gk-bottom3 .box,
+#gk-bottom4 .box,
+#gk-bottom5 .box,
+#gk-bottom6 .box {
+	float: left;
+}
+
+.widget-area .col1 { width: 100%; }
+.widget-area .col2 { width: 50%; }
+.widget-area .col3 { width: 33.3%; }
+.widget-area .col4 { width: 25%; }
+.widget-area .col5 { width: 20%; }
+.widget-area .col6 { width: 16.6%; }
+
+.widget-area .box.last1 { width: 100%; }
+.widget-area .box.last2 { width: 50%; }
+.widget-area .box.last3 { width: 33.3%; }
+.widget-area .box.last4 { width: 25%; }
+.widget-area .box.last5 { width: 20%; }
+
+.widget-area .nth1 {
+	clear: both;
+}
+
+/* 4.3. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: block!important;
+}
+
+.onlyTablets {
+	display: none!important;
+}
+
+.onlySmartphones {
+	display: none!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: none!important;
+}

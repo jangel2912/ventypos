@@ -1,0 +1,1 @@
+<!DOCTYPE html><html>    <head>        <?php include "./application/views/analytics.php"; ?>    </head>    <body>

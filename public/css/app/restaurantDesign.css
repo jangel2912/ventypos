@@ -1,0 +1,265 @@
+/*
+
+
+PANEL ESTACION DE SERVICIO
+PANEL ESTACION DE SERVICIO
+PANEL ESTACION DE SERVICIO
+PANEL ESTACION DE SERVICIO
+PANEL ESTACION DE SERVICIO
+PANEL ESTACION DE SERVICIO
+PANEL ESTACION DE SERVICIO
+
+
+*/
+
+nav.site-navbar {
+    height: 0px !important;
+}
+
+.labelMesa{
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.popMesaComensales{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: #ce160f;
+    color: white;
+    top: 0px;
+    right: 25px;
+    font-weight: bold;
+}
+
+/*Panel Contenedor*/
+.panelBackgroundContainer{
+    position: fixed !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    top:0 !important;
+    left:0 !important;
+    width:100% !important;
+    height:100% !important;
+}
+
+.botonDesignContainer{
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.botonDesignContainer img {
+    max-width: 70px !important;
+    padding: 5px !important;
+}
+
+
+.centerImageLogo{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.overlayPanel:before{
+    position: fixed !important;
+    content:" " !important;
+    top:0 !important;
+    left:0 !important;
+    width:100% !important;
+    height:100% !important;
+    display: block !important;
+    z-index:0 !important;
+    overflow: hidden !important;
+    background: rgba(7,17,41,0);
+    background: -moz-linear-gradient(top, rgba(7,17,41,0) 0%, rgba(7,17,41,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,17,41,0)), color-stop(100%, rgba(7,17,41,1)));
+    background: -webkit-linear-gradient(top, rgba(7,17,41,0) 0%, rgba(7,17,41,1) 100%);
+    background: -o-linear-gradient(top, rgba(7,17,41,0) 0%, rgba(7,17,41,1) 100%);
+    background: -ms-linear-gradient(top, rgba(7,17,41,0) 0%, rgba(7,17,41,1) 100%);
+    background: linear-gradient(to bottom, rgba(7,17,41,0) 0%, rgba(7,17,41,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#071129', endColorstr='#071129', GradientType=0 );
+}
+
+.logoVendtyRest{
+    text-align: center !important;
+    padding: 20px !important;
+    padding-bottom: 0px !important;
+}
+
+.imageLogo{
+    position: relative !important;
+}
+
+
+.tableroNumbers{
+    border-radius: 35px !important;
+    padding: 75px 30px 30px 30px !important;
+    background-color: #384A54 !important;
+    box-shadow: 5px 5px 20px rgba(11, 11, 11, 0.2) !important;
+}
+
+.floatImageBack{
+    position: relative !important;
+    margin: 0px auto !important;
+    z-index: 999 !important;
+    height: 100px !important;
+    width: 100px !important;
+    background-color: white !important;
+    box-shadow: 5px 5px 20px rgba(11, 11, 11, 0.2) !important;
+    border-radius: 100px !important;
+    margin-bottom: -50px !important;
+    line-height: 100px !important;
+}
+
+.floatImageBack img{
+    vertical-align: middle !important;
+    max-width: 75% !important;
+}
+
+.containerRestaurant{
+}
+
+.dotsCode{
+    padding-top: 5px !important;
+    padding-bottom: 10px !important;
+}
+
+.dotsCode img{
+    padding: 5px !important;
+    max-width: 25px;
+}
+
+.error {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.alertMessages{
+    text-align: center !important;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-align: center !important;
+    font-size: 14px !important;
+    color: white !important;
+    max-width: 195px;
+}
+
+.alertMessages p{
+    text-align: center;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;      /* IE */
+}
+
+
+body{
+    overflow: hidden !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #wrapper{
+        overflow: hidden !important;
+    }
+
+    body{
+        overflow: hidden !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    body{
+        overflow: hidden !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    #wrapper{
+        overflow: hidden !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #wrapper{
+        overflow: hidden !important;
+    }
+
+    body{
+        overflow: hidden !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+
+    #wrapper{
+        margin-right: -10px;
+    }
+
+    body{
+        overflow: hidden !important;
+    }
+
+    .panelBackgroundContainer{
+        position: fixed !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        top:0 !important;
+        left:0 !important;
+        width:100% !important;
+        height:100% !important;
+    }
+
+    .botonDesignContainer{
+        width: 100%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .botonDesignContainer img {
+        max-width: 100px !important;
+        padding: 5px !important;
+    }
+
+    .error{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .alertMessages p{
+        min-width: 100%;
+        text-align: center;
+        white-space: pre-wrap;      /* CSS3 */
+        white-space: -moz-pre-wrap; /* Firefox */
+        white-space: -o-pre-wrap;   /* Opera 7 */
+        word-wrap: break-word;      /* IE */
+    }
+}

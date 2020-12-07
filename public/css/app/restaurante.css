@@ -1,0 +1,375 @@
+.btn{
+  border-radius: 3px !important;
+}
+.btn-success {  
+  background-color: #5cb85c !important;
+  border-color: #5cb85c !important;  
+  color: #ffffff !important;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success[disabled], .btn-success.disabled { 
+  background-color: #36ab7a !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+.btn-default {
+    background: #ffffff !important;
+    border: 1px solid #ccc !important;
+    color: #A2B0B7 !important;
+    transition: 0.5s;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default[disabled], .btn-default.disabled { 
+  background-color: #A2B0B7 !important;  
+  border: 1px solid #717b80 !important;
+  color: #ffffff !important;
+  transition: 0.5s;
+}
+
+.thumb-productos{
+  height: 70vh;
+  overflow-y: scroll;
+  margin-top: 3%;
+}
+
+.panel{
+  margin-bottom: 10px !important;
+}
+
+.panel-body{
+  min-height:70px;
+  overflow-y: scroll;
+}
+
+.panel .panel-footer h5{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tooltip-precio {
+    width: 90%;
+    min-height: 10px;
+    /*background-color: #5cb85c;*/
+    /*background-color: rgba(92, 184, 92, 0.7);*/
+    background-color: rgba(80, 80, 80, 0.7);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;   
+    position: absolute;
+    bottom: 0;    
+    text-align: center;   
+    color: #fff;
+    margin-left: 5%;
+    font-size: 10.5px;
+}
+
+nav.site-navbar {
+    height: 0px !important;
+}
+
+.input-group-addon:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.input-group .form-control {
+  height: 30px !important;
+}
+
+.panel-orden{  
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+  height: 100px !important; 
+}
+
+.input-group[class*=col-] {    
+    padding-left: 1% !important;
+}
+
+.pago {
+  bottom: 0;
+  position: fixed;
+  background: #fff;
+  z-index: 2;
+  width: 90vw !important;
+  margin-left: 0.8vw;
+}
+
+.site-menubar ul {
+  overflow: hidden;
+}
+
+.panel-body{
+  background: #fff !important;
+}
+.panel {
+  box-shadow: none !important;
+}
+
+.thumb-productos .panel-default {    
+    padding: 0px !important;
+}
+
+/*scroll*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/***fin scroll**/
+.btn.btn-default.number {
+    border: solid 1px #ccc !important;
+}
+
+table .table-striped td{
+  color: #5cb85c;
+}
+
+.label-info, .badge-info, .blue {
+    background: #5cb85c !important;
+    transition: 0.5s;
+}
+
+#tbl_orden td
+{
+  vertical-align: bottom;
+  padding: 4px;
+}
+#tbl_orden p{
+  margin: 0 0 0px;
+  font-size: 12px;
+}
+
+.modal-open .modal {    
+    background-color: rgba(80, 80, 80, 0.7) !important;
+    border: none !important;
+}
+
+.zonas_mesas{
+  /*height: 200px;*/
+  overflow-y: auto;
+}
+
+.panel-warning > .panel-heading {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  border-radius: 3px;
+}
+
+.panel-success > .panel-heading {
+  background-color: #5cb85c;
+  border: 1px solid #5cb85c;
+  color: white;
+  border-radius: 3px;
+}
+
+.panel-body p{
+  color: #5cb85c;
+  font-size: 12px;
+}
+
+.panel .panel-body {
+  padding: 1px !important;
+}
+
+.boton{
+  margin:0;
+  padding:0;
+  text-align: center;
+  margin: 5px;
+}
+.boton img{
+  width: 100%;
+}
+
+/**cariusel slick  flechas*/
+.slick-next:before, .slick-prev:before {
+    content: none !important;
+}
+
+.slick-prev, .slick-next {
+  top: 25% !important;
+}
+
+/***tabs*/
+.tab-content {
+  background-color: #ffffff !important;
+}
+
+.estacion_tablero{
+    border: 1px solid #5cb85c;
+    border-radius: 3px;
+    width: 100%;       
+  }
+.calculadora{
+  margin:0 auto;
+  position: relative;
+  padding:0;
+  margin-top: 5%;
+}
+#btn_confirmar{
+  margin-left: 60vw;
+}
+.btnpagos{
+  bottom: -10px !important; 
+}
+
+.fuelux .dropdown-menu>li>a {
+    color: #505050 !important;   
+}
+.fuelux .btn.disabled, .fuelux .open .btn.dropdown-toggle {
+    background-color: #36ab7a !important;
+}
+.fuelux .selectlist .dropdown-menu {
+    max-width: 150px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+.fuelux .repeater-header-right .repeater-filters > button {
+    max-width: 80px !important;
+    text-align: left !important;
+}
+
+.btn, .btn-group .btn, .btn-group > .btn:first-child, .btn-group > .btn:last-child {
+    font-size: 12px !important;
+    /*margin-right: 60px !important;*/
+}
+.vertodo{
+  margin-right:  60px !important;
+}
+
+.fuelux .dropdown-menu li > a:hover:before {
+  border-left: 3px solid #505050;
+}
+
+.fuelux .dropdown-menu .dropdown-menu-right{
+  max-width: 80px !important;
+  width: 60px !important;
+}
+.fuelux .repeater-pagination .repeater-primaryPaging ul.dropdown-menu {
+    max-width: 20px;
+}
+.btntabla{
+  width: 30px;
+  height: 30px;
+
+}
+.number {
+  height: 30px;
+  width:  30px;  
+}
+
+/******* media query estacion****/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .estacion_tablero{
+    height: 80vh;       
+  }
+  #wrapper {
+    overflow: hidden;
+  }
+  .body-content {
+    overflow: hidden;
+  }
+  .orden{
+    max-height: 70vh;
+  }
+  .modal-backdrop {
+    z-index: 200 !important;
+  } 
+  .modal{
+    left: 50% !important;
+    bottom :auto !important;
+    width: 50% !important;
+    border-radius: 3px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .estacion_tablero{
+    height: 70vh;     
+  }
+  #wrapper {
+    overflow: hidden;
+  }
+  .body-content {
+    overflow: hidden;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .estacion_tablero{    
+    height: 80vh;     
+  }
+  .body-content {
+    overflow: hidden;
+  }
+} 
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .estacion_tablero{
+    height: 60vh;   
+  }
+  #wrapper {
+    top: 1.5% !important;
+    overflow: hidden;
+  }
+  .calculadora{
+    height: auto;
+    left: 10%;
+  }
+  .thumb-productos{
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+  .orden{
+    height: 30vh;
+  }
+  .modal-backdrop {
+    z-index: 1 !important;
+  } 
+  .modal {
+    left: 0% !important; 
+    top: 0% !important;
+    z-index: 101;
+    width: 100%;
+    bottom: 0px;
+    padding-top: 30%;
+  }
+  .sidebar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    visibility: hidden;
+    width: 70%;
+    height: 100%;
+    background: #d8d8d8;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  #btn_confirmar{
+    margin-left: 0vw;
+  }
+  .pago{
+    margin-left: 5vw !important;
+  }
+  
+} 
+
+/*********************************/

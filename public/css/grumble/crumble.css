@@ -1,0 +1,9 @@
+.grumble-text {
+	cursor: pointer;
+z-index: 1;
+}
+
+.grumble50.hover{ background-position: 0 0}
+.grumble100.hover{background-position: 0 -50px}
+.grumble150.hover{background-position: 0 -150px}
+.grumble200.hover{background-position: 0 -300px}

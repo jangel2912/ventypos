@@ -1,0 +1,7 @@
+codigo_producto_1
+codigo_producto_2
+codigo_producto_3
+codigo_producto_2
+codigo_producto_2
+codigo_producto_1
+codigo_producto_4

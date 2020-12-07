@@ -1,0 +1,40 @@
+.item-row div{
+    display: inline-block;
+    vertical-align: top;
+}
+.item-image {
+    width: 100px;
+}
+#item-custom-desc {
+    width: 100px !important;
+    height: 100px;
+}
+.grid-image{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.precio {
+    float: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.stock {
+    color: #FFAA31;
+}
+.precio-minimo{
+    color: #68AF27;
+}
+.label {
+    cursor: pointer;
+}
+.nothing {
+    text-align: center;
+}
+
+#facturasTable tbody tr{
+     cursor: pointer;
+}
+#facturasTable tbody tr:hover{
+    background-color: #F2F2F2;
+}

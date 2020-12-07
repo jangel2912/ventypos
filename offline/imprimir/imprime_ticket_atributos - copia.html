@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+        <title>Vendty POS</title>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+	<link rel="stylesheet" type="text/css" href="css/ticket.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/ticket_print.css" media="print" />
+
+</head>
+
+<body>
+
+
+
+	<div id="contenedor">
+
+		<div id="print_area">
+
+			<div id="ticket_wrapper">
+
+				<div id="ticket_header">
+                                        
+
+                                 
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<script type='text/javascript' src='../js/jquery-1.9.1.min.js'></script>
+	<script src="../../public/v2/appVentasOffline.js"></script>
+	<script type='text/javascript' src='../../js/jquery-1.9.1.min.js'></script>
+	<script src="../../../public/v2/appVentasOffline.js"></script>
+	<script>
+
+
+                var getUrlParameter = function getUrlParameter(sParam) {
+                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('=');
+
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : sParameterName[1];
+                        }
+                    }
+                };
+
+
+		var appOffline;
+
+		appOffline = new classVentaOffline();
+		appOffline.conectarDB(function() {
+
+                var getIdVenta = parent.idVenta;
+                
+                if( getIdVenta != undefined ){                    
+                
+                    appOffline.queryFactura( getIdVenta, function() {
+
+                                //------------------------------------------------                                
+                                
+				var data = appOffline.getObjFactura();
+								
+				
+				var base = appOffline.getBase();
+                                var username = appOffline.getUsername();
+                                
+                                // Funciones PHP
+                                
+                                var trim = function( str ){ return str.trim(); }                                
+                                var strtoupper = function( str ){ return str.toUpperCase(); }
+                                var substr = function( str, ini, lenght ){ return str.substr(ini,lenght); }
+
+                                var str_replace = function (search, replace, subject, count) {
+                                  
+                                  var i = 0,
+                                    j = 0,
+                                    temp = '',
+                                    repl = '',
+                                    sl = 0,
+                                    fl = 0,
+                                    f = [].concat(search),
+                                    r = [].concat(replace),
+                                    s = subject,
+                                    ra = Object.prototype.toString.call(r) === '[object Array]',
+                                    sa = Object.prototype.toString.call(s) === '[object Array]';
+                                  s = [].concat(s);
+                                  if (count) {
+                                    this.window[count] = 0;
+                                  }
+
+                                  for (i = 0, sl = s.length; i < sl; i++) {
+                                    if (s[i] === '') {
+                                      continue;
+                                    }
+                                    for (j = 0, fl = f.length; j < fl; j++) {
+                                      temp = s[i] + '';
+                                      repl = ra ? (r[j] !== undefined ? r[j] : '') : r[0];
+                                      s[i] = (temp)
+                                        .split(f[j])
+                                        .join(repl);
+                                      if (count && s[i] !== temp) {
+                                        this.window[count] += (temp.length - s[i].length) / f[j].length;
+                                      }
+                                    }
+                                  }
+                                  return sa ? s : s[0];
+                                }
+                                
+                                var ucfirst = function ucfirst(str) {                                  
+                                  str += '';
+                                  var f = str.charAt(0)
+                                    .toUpperCase();
+                                  return f + str.substr(1);
+                                }
+                                
+                                var number_format = function(number, decimals, dec_point, thousands_sep) {
+                                    
+                                  number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+                                  var n = !isFinite(+number) ? 0 : +number,
+                                    prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+                                    sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+                                    dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+                                    s = '',
+                                    toFixedFix = function(n, prec) {
+                                      var k = Math.pow(10, prec);
+                                      return '' + (Math.round(n * k) / k)
+                                        .toFixed(prec);
+                                    };
+                                  // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+                                  s = (prec ? toFixedFix(n, prec) : '' + Math.round(n))
+                                    .split('.');
+                                  if (s[0].length > 3) {
+                                    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+                                  }
+                                  if ((s[1] || '')
+                                    .length < prec) {
+                                    s[1] = s[1] || '';
+                                    s[1] += new Array(prec - s[1].length + 1)
+                                      .join('0');
+                                  }
+                                  return s.join(dec);
+                                }                                
+                                
+                             
+                                
+				//------------------------------------------------------
+                                
+                                if( data[ 'data_empresa'][ 'data'][ 'nit'] !='900590001-2' && data[ 'data_empresa'][ 'data'][ 'nit'] !='6466096-9' ){
+                                    var html = '';
+                                    html += '<div align="center" style="margin-top: 5px;">';
+                                    html += '<img src="'+base+'uploads/'+data[ 'data_empresa'][ 'data'][ 'logotipo']+'" width="150" border="0" />';
+                                    html += '</div>';
+                                    $("#ticket_header").append( html );
+                                }
+                                
+                                if( data[ 'data_empresa'][ 'data'][ 'nit'] == '900590001-2' || data[ 'data_empresa'][ 'data'][ 'nit']=='6466096-9' ){
+                                    var html = '';
+                                    html += '<div align="center" style="margin-top: 2px;">';
+                                    html += '<img src="'+base+'uploads/'+data[ 'data_empresa'][ 'data'][ 'logotipo']+'" width="65" border="0" />';
+                                    html += '</div>';
+                                    $("#ticket_header").append( html );
+                                } 
+				
+                                
+                                var html = '<div id="company_name"> ' + data[ 'data_empresa'][ 'data'][ 'nombre'] + ' </div> ';
+                                $("#ticket_header").append( html );
+                                
+
+                                if( data[ 'data_empresa'][ 'data'][ 'resolucion_factura_estado']=='si' ) { 
+                                    
+                                    var html = '<div id="company_resolucion">' + data[ 'venta'][ 'resolucion_factura']+ '</div>';
+                                    var html2 = '<div id="company_nit"> Nit:' + data[ 'venta'][ 'nit'] + '</div>';
+                                    $("#ticket_header").append( html );
+                                    $("#ticket_header").append( html2 );
+
+                                } else {
+                                    
+                                    var html = '<div id="company_resolucion"> ' + data[ 'data_empresa'][ 'data'][ 'resolucion'] + '</div>';
+                                    var html2 = '<div id="company_nit"> Nit:' + data[ 'data_empresa'][ 'data'][ 'nit'] + '</div>';
+                                    $("#ticket_header").append( html );
+                                    $("#ticket_header").append( html2 );
+                                } 
+                                
+                                var html = '<div id="heading"> ' + data[ 'data_empresa'][ "data"][ 'cabecera_factura'] + '</div>';                                
+                                $("#ticket_header").append( html );
+                                
+                                var html = '<div id="company_almacen"> Almacen:' + data[ 'venta'][ 'nombre'] + ' </div>';
+                                $("#ticket_header").append( html );
+                                
+                                var html = '';
+                                html += '<table id="ticket_company" align="center">';
+                                html +='<tr>';
+                                html +='<td style="width:65%;text-align: left;"> ' + data[ 'venta'][ 'direccion'] + ' </td>';
+                                html +='<td style="width:35%;text-align: right;"> ' + data[ 'venta'][ 'telefono'] + ' </td>';
+                                html +='</tr>';
+                                html +='</table>';                                
+                                $("#ticket_header").append( html );
+
+                                var html = '';
+                                html += '<table id="ticket_factura" align="center">';
+                                html += '<tr>';
+                                html += '<td style="width:45%;text-align: left;"> Factura de venta:' + data[ 'venta'][ 'factura'] + '</td>';
+                                html += '<td style="width:55%;text-align: right;"> Fecha:' + data[ 'venta'][ 'fecha'] + '</td>';
+                                html += '</tr>';
+                                html += '</table>';
+                                $("#ticket_header").append( html ); 
+                                 
+                                //----------------------------------
+                                // CLIENTE
+                                //----------------------------------
+                                var tmp =  data[ 'venta'][ 'nombre_comercial'] == "" ? "Mostrador" : data[ 'venta'][ "nombre_comercial"] + ' <br> ' + data[ 'venta'][ "tipo_identificacion"]+ ': '+ data[ 'venta'][ "nif_cif"];
+                                var html = '<div id="customer"> Cliente:' + tmp + '</div>';
+                                $("#ticket_header").append( html );
+
+                                //----------------------------------
+                                // TELEFONO
+                                //----------------------------------
+                                var html = '<div id="customer">Tel&eacute;fono:' + data[ 'venta'][ 'cliente_telefono'] + ' </div>';
+                                $("#ticket_header").append( html );
+                                
+
+                                //----------------------------------
+                                // VENDEDOR                                
+                                //----------------------------------
+																
+                                if( data['data_empresa']['data']['vendedor_impresion'] == '1'){                                     									
+                                    var html  = '<div id="seller"> Vendedor: ' + data[ 'venta'][ 'vendedor'] + ' </div>';
+                                    $("#ticket_header").append( html );
+                                }                                    
+                                    
+                                if( data[ 'data_empresa'][ 'data'][ 'vendedor_impresion'] == '2' ){
+                                    var html  = '<div id="seller"> Vendedor:' + data[ 'username'] + ' </div>';
+                                    $("#ticket_header").append( html );
+                                }
+                                    
+                                if( data[ 'data_empresa'][ 'data'][ 'vendedor_impresion']=='3' ){ 
+                                    var html = '';
+                                    html += '<div id="seller"> Vendedor:'+ data[ 'venta'][ 'vendedor'] + ' </div>';
+                                    html += '<div id="seller"> Usuario:  '+ username +' </div>';
+                                    $("#ticket_header").append( html );
+                                }
+
+                                if( data[ 'venta'][ 'nota'] !='' ){
+                                    var html  =  '<div id="seller"> ' + data[ 'venta'][ 'nota'] + ' </div>';
+                                    $("#ticket_header").append( html );
+}
+                                
+                                
+                                //========================================================================
+                                //========================================================================
+
+                                var i=0;
+                                for( var j = 0; j < data[ "detalle_venta"].length; j++) {
+                                    var p = data[ "detalle_venta"][j];
+                                    if( p[ 'descuento']> 0){ i=1; }
+                                }
+                                
+                                //-----------------------------------------------
+                                
+                                var table = '';
+                                
+                                
+                                if( i == 1 ){
+                                    var html = '';
+                                    html += '<table id="ticket_items">';
+                                    html += '<tr>';
+                                    html += '<th style="width:20%;text-align: left;"> Ref </th>';
+                                    html += '<th style="width:20%;text-align:center;"> Cant </th>';
+                                    html += '<th style="width:20%;text-align:right;"> Precio </th>';
+                                    html += '<th style="width:20%;text-align:center;"> Desc </th>';
+                                    html += '<th style="width:20%;text-align:right;"> Total </th>';
+                                    html += '</tr>';
+                                    table += html;
+                                }else{
+                                    var html = '';
+                                    html += '<table id="ticket_items">';
+                                    html += '<tr>';
+                                    html += '<th style="width:20%;text-align: left;"> Ref </th>';
+                                    html += '<th style="width:20%;text-align:center;"> Cant </th>';
+                                    html += '<th style="width:20%;text-align:right;"> Precio </th>';
+                                    html += '<th style="width:20%;text-align:right;" colspan="2"> Total </th>';
+                                    html += '</tr>';
+                                    table += html;
+				}
+
+
+                                var total=0 ;
+                                var timp=0 ;
+                                var subtotal=0 ;
+                                var total_items=0 ;
+                                var total_items_propina=0 ;
+                                var sobrecosto=0 ;
+                                var propina_final=0 ;
+                                
+                                for( var j = 0; j < data[ "detalle_venta"].length; j++) {                                    
+                                    var p = data[ "detalle_venta"][j];
+
+                                    if( p[ "nombre_producto"]=='PROPINA' ){ sobrecosto = p[ 'descripcion_producto']; }
+                                    else{
+                                        
+                                        if( data[ "tipo_factura"] == 'clasico' ){
+                                                                                    
+                                            /* SERVICIOS */
+                                            pv = p[ 'precio_venta'];
+                                            desc = p[ 'descuento'];
+                                            pvd = pv - desc;
+                                            imp = pvd * p[ 'impuesto'] / 100 * p[ 'unidades'];
+                                            total_column= pvd * p[ 'unidades'];
+                                            total_items += total_column;
+                                            valor_total = pvd * p[ 'unidades'] + imp ;
+                                            total += total + valor_total;
+                                            timp += imp;
+                                            
+                                        }else{
+                                            /* POS */
+                                            pv = p[ 'precio_venta'];
+                                            desc = p[ 'descuento'];
+                                            pvd = pv - desc;
+                                            imp = pvd * p[ 'impuesto'] / 100 * p[ 'unidades'];
+                                            total_column = pvd * p[ 'unidades'];
+                                            total_items += total_column;
+                                            valor_total = pvd * p[ 'unidades'] + imp;
+                                            total += total + valor_total;
+                                            timp += imp;
+                                        }
+
+                                        if( trim( strtoupper( p["des_impuesto"] )) == 'IAC' || trim(strtoupper(p["des_impuesto"])) == 'IMPOCONSUMO' || trim(strtoupper(p["des_impuesto"])) == 'IMPUESTO AL CONSUMO'){
+                                                pv_propina = p['precio_venta'];
+                                                desc_propina = p['descuento'];
+                                                pvd_propina = pv_propina - desc_propina;
+                                                total_column_propina = pvd_propina * p['unidades'];
+                                                total_items_propina += total_column_propina;
+                                        }
+                                        
+                                        
+                                        if( i==1 ){
+                                            
+                                            var html = '';
+                                                    
+                                            html +='<tr> <td colspan="5">' + substr( p[ "nombre_producto"], 0, 40) + '</td> </tr>';
+                                            html +='<tr>';
+                                            html += '<td> '+p[ "codigo_producto"]+' </td>';
+                                            html += '<td style="text-align:center;"> '+p[ "unidades"]+' </td>';
+                                            html += '<td style="text-align:right;"> '+ number_format( p[ "precio_venta"] )+' </td>';
+                                            html += '<td style="text-align:center;"> '+number_format( p[ 'descuento'] )+'</td>';
+                                            html += '<td style="text-align:right;" colspan="2"> '+number_format( valor_total)+' </td>';
+                                            html += '</tr>';
+                                            
+                                            table += html;
+                                            
+                                        } else{
+                                        
+                                            var html = '';
+
+                                            html += '<tr> <td colspan="5"> ' + substr( p[ "nombre_producto"], 0, 40) + ' </td> </tr>';
+                                            html += '<tr>';
+                                            html += '<td> ' +p[ "codigo_producto"] + '</td>';
+                                            html += '<td style="text-align:center;"> '+ p["unidades"] +' </td>';
+                                            html += '<td style="text-align:right;" colspan="2"> ' + number_format( p[ "precio_venta"]) + '</td>';
+                                            html += '<td style="text-align:right;"> ' + number_format( valor_total) + '</td>';
+                                            html += '</tr>';
+
+                                            table += html;
+                                        
+                                        }
+                                        
+                                        
+                                    }
+
+                                }
+
+                                total = total_items + timp;
+                                
+                                var html = '';
+                                html += '<tr>';
+                                html += '<td colspan="4" style="text-align:right;"> Valor items </td>';
+                                html += '<td style="text-align:right"> '+number_format( total_items )+' </td>';
+                                html += '</tr>';
+                                table += html;
+                                
+                                
+                                for( var j = 0; j < data[ "venta_impuestos"].length; j++) {
+                                    var p = data[ "venta_impuestos"][j];
+                            
+                                    if( p["imp"] != ''){
+                                        
+                                        var html = '';
+                                        html += '<tr>';
+                                        html += '<td colspan="4" style="text-align:right;"> '+p["imp"]+' </td>';
+                                        html += '<td style="text-align:right"> '+number_format( p["impuestos"] ) +' </td>';
+                                        html += '</tr>';
+                                        table += html;
+
+                                    }else{ 
+                                        
+                                        var html = '';
+                                        html += '<tr>';
+                                        html += '<td colspan="4" style="text-align:right;">IVA</td>';
+                                        html += '<td style="text-align:right"> ' + number_format( p["impuestos"]) + ' </td>';
+                                        html += '</tr>';
+                                        table += html;
+
+                                    }
+                                 }
+
+                            
+                                if( sobrecosto> 0){
+                                    propina_final = ( total_items_propina * sobrecosto) / 100;
+                                }
+
+                                if( sobrecosto> 0 && propina_final > 0){
+                                    var html = '';
+                                    html += '<tr>';
+                                    html += '<td colspan="4" style="text-align:right;"> Propina </td>';
+                                    html += '<td style="text-align:right"> '+number_format( propina_final)+' </td>';
+                                    html += '</tr>';
+                                    table += html;
+                                }
+
+
+                                for( var j = 0; j < data[ "detalle_pago_multiples"].length; j++) {
+                                    var p = data[ "detalle_pago_multiples"][j];
+                                    
+                                    formpago = str_replace( "_", " ", p["forma_pago"] );
+
+                                    if( p["forma_pago"] == 'efectivo'){
+                                        
+                                        var html = '';
+                                        html += '<tr>';
+                                        html += '<td colspan="4" style="text-align:right;"> ' + ucfirst( formpago) + ' </td>';
+                                        html += '<td style="text-align:right"> ' + number_format( p["valor_entregado"] ) + '</td>';
+                                        html += '</tr>';
+                                        table += html;
+                                    }
+
+                                    if( p["forma_pago"]!='efectivo'){
+                                        
+                                        var html = '';
+                                        html += '<tr>';
+                                        html += '<td colspan="4" style="text-align:right;"> ' + ucfirst( formpago) + ' </td>';
+                                        html += '<td style="text-align:right"> ' + number_format( p["valor_entregado"] ) + ' </td>';
+                                        html += '</tr>';
+                                        table += html;
+                                    }
+
+                                }
+
+                                for( var j = 0; j < data[ "detalle_pago_multiples"].length; j++) {
+                                    var p = data[ "detalle_pago_multiples"][j];
+                                    
+                                    if( p["forma_pago"] =='efectivo'){
+                                        
+                                        var html = '';
+                                        html += '<tr>';
+                                        html += '<td colspan="4" style="text-align:right;"> Cambio </td>';
+                                        html += '<td style="text-align:right"> ' + number_format( p["cambio"] ) + ' </td>';
+                                        html += '</tr>';
+                                        
+                                        table += html;
+
+                                    }
+
+                                }
+
+                                var html = '';
+                                html += '<tr>';
+                                html += '<td colspan="4" style="text-align:right;"> Total venta </td>';
+                                html += '<td style="text-align:right"> '+number_format( total + propina_final)+' </td>';
+                                html += '</tr>';
+                                html += '<tr> <td colspan="5">&nbsp;</td></tr>';
+                                html += '</table>';
+                                table += html;
+                                
+                                $("#ticket_wrapper").append( table );                               
+                                
+                                var html = '';
+                                html += '<div align="center"> '+data[ 'data_empresa'][ 'data'][ 'resolucion'] +'</div>';
+                                html += '<div align="center" style="padding-bottom:-10px;"> '+data[ 'data_empresa'][ "data"][ 'terminos_condiciones']+'<br><br><strong>Software POS Cloud: vendty.com</strong>' +'</div>';
+                                html += '<br/><br/>';
+                                
+                                $("#ticket_wrapper").append( html );
+                                
+                                
+                                
+                        
+				setTimeout(function(){
+                                    window.print();
+                                },500);
+
+			});
+                        
+                }
+
+		});
+	</script>
+</body>
+
+</html>

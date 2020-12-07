@@ -1,0 +1,426 @@
+#modalEfectuarPago {
+  background-color: white !important;
+  width: 600px;
+  overflow-y: auto !important;
+  max-height: 600px;
+}
+
+#backPopUp {
+  background-color: rgba(0, 0, 0, 0.31);
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  position: fixed;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 1000 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background: #505050 !important;
+  color: #fff !important;
+  text-align: left !important;
+  padding: 5px 10px !important;
+}
+
+.ui-dialog .ui-dialog-title {
+  color: #fff !important;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  top: 15% !important;
+}
+
+.roundRed {
+  background-color: red;
+}
+
+#modalEfectuarPago * input[type="text"] {
+  font-size: 12px !important;
+  height: auto !important;
+  text-align: right !important;
+}
+
+#modalEfectuarPago * select {
+  font-size: 16px !important;
+  height: auto !important;
+  font-weight: bold !important;
+}
+
+.redColorAp {
+  color: red !important;
+}
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.eliminar_forma_pago {
+  color: red !important;
+  padding: 5px 5px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+}
+
+/*/////////// TYPE SEARCH ///////////*/
+
+.btnTypeSearch > div {
+  background-color: rgba(128, 128, 128, 0.36);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnTypeSearch > .activeB {
+  background-color: #5ca745 !important;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.popover.top .arrow {
+  border-top-color: transparent !important;
+}
+
+/*scroll*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/***fin scroll**/
+.btn.btn-default.number {
+  border: solid 1px #ccc !important;
+}
+
+/*//////////////////////*/
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.menuTopMesa {
+  padding: 10px !important;
+  background-color: #d5f3ff !important;
+  padding-bottom: 0px !important;
+}
+
+.btnTitleSup {
+  font-weight: bold !important;
+  color: black;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.inputStylized {
+  background-color: white !important;
+  border-radius: 50px !important;
+}
+
+.fill-height-or-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.fill-height-or-more > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.input-group .form-control:first-child {
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-right: none !important;
+  padding: 15px !important;
+  padding-right: 0px !important;
+  margin: 0px;
+  background-color: white !important;
+}
+
+.input-group-addon {
+  background-color: white !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-left: none !important;
+  margin-left: -10px;
+}
+
+.input-group-addon div {
+  color: #5cb85c;
+}
+
+.input-group .form-control:first-child :hover {
+  border: none !important;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px !important;
+  content: "" !important;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  text-align: center;
+}
+
+.slick-next:before {
+  margin-top: -20px;
+  content: "" !important;
+}
+
+.slick-prev,
+.slick-next {
+  margin-top: -25px !important;
+}
+
+.slick-prev::before {
+  content: "" !important;
+}
+
+.slick-next:after {
+  content: "" !important;
+}
+
+.slick-next {
+  text-align: right !important;
+}
+
+.category-option {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.category-option p {
+  padding: 5px;
+  color: black !important;
+  text-decoration: none !important;
+}
+.activeCategory p {
+  padding: 5px;
+  color: #5cb85c !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+.thumb-productos .panel-default {
+  padding: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.panel-body {
+  height: 100px !important;
+  min-height: 100px !important;
+}
+
+.tooltip-precio {
+  color: white !important;
+  background-color: #5cb85c !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  padding: 5px !important;
+}
+
+.titulo-producto {
+  font-weight: bold !important;
+}
+
+.pagoNew {
+  position: absolute !important;
+  bottom: 0px !important;
+  position: fixed !important;
+  background: #fff !important;
+  z-index: 2 !important;
+}
+.btnNewOrder {
+  height: 75px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btnNewOrder a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.headerIconsOrder {
+  padding: 10px;
+  padding-right: 30px;
+  background-color: #fafafa !important;
+}
+
+.thumb-productos {
+  height: 100% !important;
+}
+
+.footerNewP {
+  position: fixed !important;
+  bottom: 0px !important;
+  right: 0px;
+  width: inherit;
+  z-index: 99 !important;
+}
+
+.containerTableModap {
+  display: flex;
+  justify-content: center;
+}
+
+.tableModap {
+  width: 75%;
+}
+
+.tableModap tbody {
+  width: 100% !important;
+}
+
+.tableModap tr {
+  width: 100% !important;
+}
+
+.tableModap td {
+  font-size: 10px;
+  color: #606060 !important;
+}
+
+.tableModap tr {
+  border: solid 1px #e6e6e6 !important;
+}
+
+#domiciliarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.cuadro_domiciliarios {
+  background-color: transparent;
+  border: 1px solid #ddd8d8;
+  border-radius: 5px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.imgdomi {
+  width: 100%;
+}
+
+table > tbody > tr.default > td {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  text-indent: 100px;
+  text-transform: capitalize !important;
+  font-weight: bold !important;
+}
+
+@media only screen and (min-width: 1001px) {
+  #wrapper {
+    overflow: hidden !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .topMargin {
+    margin-top: 75px;
+  }
+
+  .headerIconsOrder {
+    padding: 50px;
+    background-color: #f5f5f5 !important;
+  }
+
+  .footerNewP {
+    position: fixed !important;
+    bottom: 0px !important;
+    width: 100% !important;
+    z-index: 99 !important;
+  }
+  .marginBottomN {
+    margin-bottom: 175px;
+  }
+
+  .specificMobile-1 {
+    flex: 1 !important;
+  }
+  .specificMobile-2 {
+    /*flex: 2 !important;*/
+    flex: 1 !important;
+  }
+  .specificMobile-3 {
+    /* flex: 3 !important;*/
+    flex: 1 !important;
+  }
+  .specificMobile-4 {
+    flex: auto !important;
+  }
+  .specificMobile-5 {
+    flex: 5 !important;
+  }
+  .specificMobile-10 {
+    flex: 1 !important;
+    background-color: transparent !important;
+    /*margin-top: 10px !important;*/
+  }
+  .thumb-productos {
+    min-height: 95% !important;
+    max-height: 95% !important;
+    overflow-y: scroll !important;
+  }
+  .bodyMobile {
+    display: table;
+    background-color: transparent;
+  }
+  .cellMobile {
+    background-color: transparent;
+    float: none;
+    display: table-cell;
+    border: none;
+    height: 100% !important;
+  }
+
+  #slickCategories {
+    flex: 1 !important;
+    margin-top: 10% !important;
+  }
+  #vitrinaProductos {
+    flex: auto !important;
+    max-height: 80vh;
+    margin-top: 15%;
+  }
+}

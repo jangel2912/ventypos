@@ -1,0 +1,67 @@
+// estilos del modulo tienda
+#themes {
+   margin-left: 30px;
+  
+}
+.layout_container{
+    display: table;
+    float: left; 
+    margin-left: 25px;
+    margin-right: 0px;
+}
+.border {
+    border: 1px solid rgb(159, 158, 158);
+    border-radius: 5px;
+    margin-top: -12px;
+    margin-right: 5px;
+   margin-bottom: 15px;
+   padding: 2px ;
+   //padding-bottom: 3px ;
+}
+.no_select {
+    background: url(../img/icon_check.png) no-repeat center center;
+    width: 32px;
+    height: 32px;
+    display:block;
+    margin-left: -20px;
+    z-index: -10;
+}
+.no_select:hover {
+    background: url(../img/icon_select.png) no-repeat center center;
+    width: 32px;
+    height: 32px;
+    display: block;
+    cursor: pointer;
+}
+.select_check {
+    background: url(../img/icon_check_select.png) no-repeat center center;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.link_tienda{
+    float: right;
+    //background-color: #d9edf7;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 10px;
+    
+}
+.link_tienda h1 small, .link_tienda h1{
+    color: white;
+}
+
+.icon_white {
+    border-color:  #FFFFFF !important;
+}
+.icon_white_fig {
+    color:  #FFFFFF !important;
+}
+.box_google_map{
+    //background-color: red;
+    border: 1px solid #CDCDCD;
+     border-radius: 3px;
+     padding: 3px;
+     height: 300px;
+   
+}

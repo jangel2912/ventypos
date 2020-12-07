@@ -1,0 +1,361 @@
+/*
+
+
+MESERO 1
+
+
+*/
+
+.body-content {
+    background-color: #fafafa !important;
+    min-height: 100vh !important;
+}
+#wrapper {
+    overflow: scroll;
+}
+
+.tab-content-ap {
+    background-color: transparent !important;
+    height: 20px !important;
+}
+
+.containerTabsR {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase !important;
+    overflow: hidden;
+}
+
+.flexClass{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/*TAB*/
+.containerTabsR > .row div {
+    padding: 5px 30px;
+    border-top: solid 1.5px #5cb85c;
+    border-bottom: solid 1.5px #5cb85c;
+    border-right: solid 1.5px #5cb85c;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.containerTabsR div a {
+    text-decoration: none;
+}
+
+/*PRIMER TAB*/
+.containerTabsR > .row div:first-child{
+    border: solid 1.5px #5cb85c;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/*ULTIMO TAB*/
+.containerTabsR > .row div:last-child{
+    border: solid 1.5px #5cb85c;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+/*ACTIVE TAB*/
+.activeTabMesero {
+    background-color: #5cb85c;
+}
+
+.activeTabMesero a {
+    color: #ffffff;
+}
+
+.nav-tabs{
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+.dashboard .panel, .dashboard .widget{
+    box-shadow: none !important;
+}
+
+.containerBoxBottom {
+    text-align: center;
+    padding: 15px;
+   /* background-color: #dff5ff;*/
+}
+#table_ordenes_pendientes table {
+    border: none !important;
+}
+
+.content_ordenes_pendientes {
+ outline: none !important;
+}
+
+#table_ordenes_pendientes th {
+    text-align: center;
+    font-weight: bold !important;
+    color: black !important;
+}
+
+#table_ordenes_pendientes tbody {
+    color: black !important;
+}
+
+.containerBoxBottom h5 {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.panel-success-new > .panel-heading-new{
+    background-color: #5cb85c;
+    border: 1px solid #5cb85c;
+    color: white;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.individualTab{
+    width: auto;
+}
+
+.panel-danger-new > .panel-heading-new{
+    background-color: #c1c3c8;
+    border: 1px solid #c1c3c8;
+    color: white;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100px;
+}
+
+.panelMesas {
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.labelMesa{
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.popMesaComensales{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: #ce160f;
+    color: white;
+    top: 0px;
+    right: 25px;
+    font-weight: bold;
+}
+
+.panel-success-new > .panel-heading-new img{
+    max-width: 100px;
+}
+
+.containerMeseroInfo {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 50px;
+}
+.logoEmpresa{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.logoVendty{
+    max-width: 100px;
+}
+
+.logoEmpresa img{
+    max-width: 200px;
+}
+
+#page-content {
+    z-index: 1 !important;
+}
+
+.ordenes_pendientes .btn, .ventas_pendientes .btn{
+    height: 30px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.centrando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.fecha_creacion_comanda {
+    color: #505050 !important;
+    text-align: center !important;
+    font-size: 10px;
+}
+.nombre_mesa{
+    font-size: 10px !important;    
+    color: #505050 !important;
+}
+
+.ui-datepicker {
+    background-color: #fff;
+}
+
+.comensales{position: absolute;
+    right: -8px;
+    top: -10px;        
+    /* width: 10px; */
+    text-align: center;
+    border-radius: 25%;
+    padding: 1px;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.page-content
+{
+    background-color: #fff !important;
+    padding: 10px 0px !important;
+    height: 85vh !important;
+}
+
+.content-mesa-body {
+    overflow-y: auto !important;
+    height: 60vh !important;
+}
+
+.content-mesa-active{
+    padding: 5px; box-sizing: border-box;
+    border: solid 1px #5cb85c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 120px;
+    text-align: -webkit-center;
+    width: 80%;
+}
+
+.content-mesa{
+    padding: 5px; box-sizing: border-box;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 120px;
+    text-align: -webkit-center;
+    width: 80%;
+    line-height: 0.8 !important;
+}
+
+.content_ordenes_pendientes {
+    height: 20vh;
+    overflow: scroll;
+    outline: solid 1px lightgray;
+    padding: 10px;
+}
+
+.tabs-restaurante>li.active>a, .tabs-restaurante>li.active>a:focus, .tabs-restaurante>li.active>a:hover {
+    background-color: #505050 !important;
+    color: #fff !important;
+}
+
+.btnmesas {
+    background-color: #505050;
+    border-radius: 50px;
+    height: 30px;
+    width: 80%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px !important;
+}
+
+.activeTabMesero {
+    background-color: #5cb85c !important;
+}
+.tab_panel a {
+    color: #fff !important;
+}
+
+.centrarbtn{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /*TAB*/
+    .containerTabsR > .row div {
+        padding: 5px 30px;
+        border-top: solid 1.5px #5cb85c;
+        border-bottom: solid 1.5px #5cb85c;
+        border-right: solid 1.5px #5cb85c;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .containerTabsR div a {
+        text-decoration: none;
+    }
+    /*PRIMER TAB*/
+    .containerTabsR > .row div:first-child{
+        border: solid 1.5px #5cb85c;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    /*ULTIMO TAB*/
+    .containerTabsR > .row div:last-child{
+        border: solid 1.5px #5cb85c;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: none;
+    }
+    /*ACTIVE TAB*/
+    .activeTabMesero {
+        background-color: #5cb85c;
+    }
+
+    .individualTab{
+        width: 100%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

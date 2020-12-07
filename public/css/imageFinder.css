@@ -1,0 +1,46 @@
+
+.imageFinder a.thumbnail img {
+    height: 140px;
+    width: 100%;
+}
+
+.imageFinderSelectedImageContainer {
+    position: relative;
+}
+
+.removeSelectecImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 34px;
+    width: 34px;
+    border: 1px solid #c22439;
+    color: #c22439 !important;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.selectFromGallery, .imageFinderTitle {
+    font-weight: 400 !important;
+}
+
+.local-images {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.local-images:hover span.image-title {
+    font-weight: bold;
+}
+
+.image-search-container {
+    margin-bottom: 25px;
+}
+
+.modal-close {
+    margin-right: 10px;
+}
+
+#search-inputproduct-images {
+    margin: 0px;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>VENDTY - MODELO DE CORREO ELECTRONICO</title>
+  <style type="text/css">
+  body {margin: 0; padding: 0; min-width: 100%!important;}
+  img {height: auto;}
+  .content {width: 100%; max-width: 800px;}
+  .header {padding: 20px 0px 0px 0px;background:#F3F3F3}
+  .innerpadding {padding: 30px 30px 30px 30px;}
+  .innerpadding2{padding: 10px;}
+  .borderbottom {border-bottom: 1px solid #f2eeed;}
+  .content-email{ border: solid 1px lightgray;border-radius: 10px; background:#fff; padding: 20px 10px 20px 10px;}
+  .subhead {font-size: 15px; color: #ffffff; font-family: sans-serif; letter-spacing: 10px;}
+  .h1, .h2, .bodycopy {color: #153643; font-family: sans-serif;}
+  .h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
+  .h2 {padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold;}
+  .bodycopy {font-size: 16px; line-height: 22px;}
+  .button {text-align: center; font-size: 17px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;}
+  .button a {color: #ffffff; text-decoration: none;}
+  .footer {background:#F3F3F3}
+  .footercopy {font-family: sans-serif; font-size: 14px; color: #979798;}
+  .footercopy a {color: #979798; text-decoration: underline;}
+  .footercopy .title a{color: #45af6d; font-weight: bold; text-decoration:none;}
+  .footercopy .tel{color:#696969;font-weight: bold;}
+  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
+  body[yahoo] .hide {display: none!important;}
+  body[yahoo] .buttonwrapper {background-color: transparent!important;}
+  body[yahoo] .button {padding: 0px!important;}
+  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
+  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
+  
+  
+
+  }
+
+    .logo{padding:20px 0 20px 20px;}
+            h1{padding-left:5px;color:#424242;font-family:Arial,Helvetica,sans-serif;font-size:19px;line-height:20px;padding-bottom:5px;margin:0}
+           
+           h3{color:#424242;text-align:center; font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;padding-bottom:5px;margin:0; margin-bottom:10px;}
+            .fecha,h2{color:#9e9e9e;padding-left:5px;font-family:sans-serif;font-size:14px;font-weight:normal;line-height:16px;margin:0 0 10px 0;border-bottom:1px solid #e5e5e5}
+            .templateColumns{border: solid 1px lightgray;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+            .column-table{background-color:#f5f5f5; padding: 10px 0px;}
+            .flex{padding: 20px;box-sizing: border-box; border: solid 1px lightgray;-webkit-border-radius: 0px 0px 0px 5px;-moz-border-radius: 0px 0px 0px 5px;border-radius: 0px 0px 5px 5px; border-top:none;}
+            .title-span{width:100%;  border-bottom:solid 1px #eceff1; color:#333;font-family:Arial,Helvetica,sans-serif;font-size:15px; text-transform:uppercase;padding:5px 10px 8px}
+            .description-span{color:#37474f;padding-left:10px; font-family:sans-serif; font-weight:bold;font-size:26px;line-height:22px; margin:0; margin-top:12px;}
+            .intro .cuenta{float:right;}
+            .boton{text-align:right;}
+            @media only screen and (max-width: 480px){
+                .logo{padding: 20px 0 20px 0px;display: inline-block !important;}
+                .boton{margin-bottom: 17px; text-align:center;}
+                /*.intro tbody{text-align:center;}*/
+                .intro tbody tr td{display:block;}
+                .templateColumnContainer{display:block !important;width:100% !important;}
+                .templateColumnContainer tbody {width: 100%;display: block;}
+                .templateColumnContainer tbody tr{ width: 100%;display: inline-table;padding-left: 5%;}
+                .templateColumnContainer tbody tr td{ vertical-align: top;}
+            }
+
+  /*@media only screen and (min-device-width: 601px) {
+    .content {width: 600px !important;}
+    .col425 {width: 425px!important;}
+    .col380 {width: 380px!important;}
+    }*/
+
+    .text-black{
+      color: black;
+    }
+    h2.text-center{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body yahoo bgcolor="#F3F3F3">
+<table width="100%" bgcolor="#F3F3F3" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td>
+    <!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+    <![endif]-->     
+    <table bgcolor="#ffffff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="header">
+          <table width="200" align="left" border="0" cellpadding="0" cellspacing="0">  
+            <tr>
+              <td height="0" style="">
+                <img class="fix" src="https://vendty.com/wp-content/uploads/2019/05/logo.png" width="100%" border="0" alt="" style="margin-left:2rem;"/>
+              </td>
+            </tr>
+          </table>
+          <!--[if (gte mso 9)|(IE)]>
+            <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+          <![endif]-->
+          <!--<table class="col425" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">  
+            <tr>
+              <td height="50">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="subhead" style="padding: 0 0 0 3px;">
+                      CREATING
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h1" style="padding: 5px 0 0 0;">
+                      Responsive Email Magic
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>-->
+          <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <tr>
+        <td class="innerpadding2" style="background:#F3F3F3;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="innerpadding2 content-email">
+                        <tr>
+                          <td class="h2 text-center" style="text-align: center;">LICENCIA RENOVADA</td>
+                        </tr>
+                        <tr>
+                          <td class="bodycopy" style="padding: 0px 40px 0px;">
+                            <p class="container">
+                              <span class="text-black"> ¡Hola <strong><?= $name; ?></strong>!</span><br>
+                                <div class="body-content">
+                                  <p class="text-black">
+                                  Nos alegra tenerte nuevamente con nosotros. Sabemos que Vendty se ajusta a todas tus necesidades y que por esa razón este mes renovaste tu licencia:
+                                  </p>
+                                  <table border="1" cellpadding="0" cellspacing="0"  width="100%">
+                                    <thead>
+                                        <th align="center">LICENCIA</th>
+                                        <th align="center">FECHA INICIO</th>
+                                        <th align="center">FECHA VENCIMIENTO</th>
+                                        <th align="center">ALMACÉN</th>
+                                        <th align="center">VALOR</th>
+                                    </thead>
+                                    <tbody>
+                                        <?= $table ?>						
+                                    </tbody>							
+                                  </table>
+                                  <p class="text-black">También nos encantaría que supieras que estamos aquí para ayudarte en todo lo que necesitas, te compartimos nuestros canales de soporte:</p>
+                                  
+                                  <p class="text-black">
+                                    <label><strong>Capacitaciones ilimitadas: </strong></label><br>
+                                    <label>Agenda una capacitación dando <a href="https://app.hubspot.com/meetings/capacitacion/resolucion-dudas">clic aquí</a>.</label>
+                                  </p>
+                                  
+                                  <p class="text-black">
+                                    <label><strong>Soporte telefónico: </strong></label><br>
+                                    <label>Comunícate con nosotros de lunes a viernes de 8 am a 6 pm y los s&aacute;bados de 9 am a 1 pm.</label>
+                                  </p>
+
+                                  <p class="text-black">
+                                    <label><strong>Soporte en horario extendido: </strong></label><br>
+                                    <label>Puedes ponerte en contacto con nosotros de lunes a viernes de 6 pm a 10 pm y los sábados de 1 pm a 6 pm.</label>
+                                  </p>
+
+                                  <p class="text-black">
+                                    <label><strong>Ticket de soporte: </strong></label><br>
+                                    <label>En caso de requerir un soporte fuera de los horarios previamente establecidos puedes ingresar un nuevo ticket con tu soporte <a href="http://bit.ly/ticket-vendty">aquí</a>.</label>
+                                  </p>
+
+                                  <p class="text-black">
+                                    <label><strong>Centro de ayuda: </strong></label><br>
+                                    <label>Contamos con una serie de artículos que puedes revisar en cualquier momento, estos te permitirán conocer más de Vendty, solo debes hacer <a href="http://bit.ly/ayuda-vendty">clic aquí</a>.</label>
+                                  </p>
+
+                                  <p class="text-black">
+                                    <label><strong>Canal de YouTube: </strong></label><br>
+                                    <label>Tenemos una gran biblioteca de videos tutoriales que te ayudarán, con&oacute;celos <a href="http://bit.ly/YouTube-Vendty">aquí</a>.</label>
+                                  </p>
+                                  <p class="text-black">
+                                    <label>Gracias por elegirnos, equipo Vendty</label>
+                                  </p>
+                                </div>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0px 40px 0px;">
+                                <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#5cb85c;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" style="padding:10px;font-family:sans-serif;font-size:12px;color:#fff;line-height:20px">
+                                                Este mensaje se ha enviado de forma automatica de acuerdo a la información de su almacen. 
+                                                <!--<a href="http://vendty.com" style="color:#00f;text-decoration:underline" target="_blank">Visita nuestro sitio web</a>.-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+              </table>
+              <![endif]-->
+              </td>
+            </tr>
+          </table>
+          
+          </body>
+          </html>

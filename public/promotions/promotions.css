@@ -1,0 +1,184 @@
+.glyphicon {
+    color: #848484;
+    font-size: 1.8rem;
+}
+
+.glyphicon-check {
+    color: #6bcb32;
+}
+
+#composite-products {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#composite-products.active {
+    display: block;
+}
+
+#composite-products .composite-products-close {
+    font-size: 2rem;
+    line-height: 45px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    position: absolute;
+    left: -55px;
+    top: 0;
+    cursor: pointer;
+}
+
+#composite-products .composite-products-close.down {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: -47px;
+    top: initial;
+    left: 0;
+}
+
+#composite-products .composite-products-title {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 3;
+    height: 50px;
+    background-color: #384951;
+}
+
+#composite-products .composite-products-title div {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 30%;
+}
+
+#composite-products .composite-products-title div input {
+    color: #fff !important;
+    background-color: #5e737d;
+    border: none;
+    outline: none;
+}
+
+#composite-products .composite-products-modal {
+    height: 380px;
+    background-color: #f0f4f5;
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.6);
+    /* overflow: hidden; */
+    padding: 0;
+    position: fixed;
+    top: 20%;
+    left: 0;
+}
+
+#composite-products .composite-products-modal .composite-products-content,
+#composite-products .composite-products-modal .composite-modify-content{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    overflow-y: scroll;
+    height: 330px;
+
+}
+
+#composite-products .composite-products-modal .composite-products-content .option,
+#composite-products .composite-products-modal .composite-modify-content .option {
+    color: #000;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    margin: 5px 5px;
+    display: inline-block;
+    /* background-color: #384951; */
+    cursor: pointer;
+}
+
+#composite-products .composite-products-modal .composite-products-content .option.active,
+#composite-products .composite-products-modal .composite-products-content .option:hover,
+#composite-products .composite-products-modal .composite-products-content .option:active,
+#composite-products .composite-products-modal .composite-products-content .option.focus,
+
+#composite-products .composite-products-modal .composite-modify-content .option.active,
+#composite-products .composite-products-modal .composite-modify-content .option:hover,
+#composite-products .composite-products-modal .composite-modify-content .option:active,
+#composite-products .composite-products-modal .composite-modify-content .option.focus {
+    color: #fff;
+    background-color: #384951;
+}
+
+@media (max-width: 992px) {
+    #composite-products .composite-products-modal {
+        height: auto;
+        position: relative;
+        top: initial;
+    }
+}
+
+
+.form-container {
+    position: relative;
+    border: solid 1px #939598;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+}
+
+.form-container .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.week {
+    border: solid 1px #939598;
+    border-radius: 5px;
+    display: flex;
+}
+
+.week .day {
+    text-align: center;
+    flex: auto;
+    padding: 15px;
+    border-right: solid 1px #939598;
+    cursor: pointer;
+}
+
+.week .day.active,
+.week .day:hover,
+.week .day:active,
+.week .day:focus {
+    color: #fff;
+    background-color: #5ca745;
+}
+
+.week .day:last-child {
+    border: none;
+}
+
+.warehouses {
+    padding: 10px;
+    margin: 0 5px 5px 0;
+    border: solid 1px #939598;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.warehouses.active,
+.warehouses:hover,
+.warehouses:active,
+.warehouses:focus {
+    color: #fff;
+    background-color: #5ca745;
+}

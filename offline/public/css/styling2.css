@@ -1,0 +1,189 @@
+#v2Cont .label,
+#v2Cont .dblue {
+	background: #005683 !important
+}
+#v2Cont .label-info,
+#v2Cont .badge-info,
+#v2Cont .blue {
+	background: #009AD7 !important
+}
+#v2Cont .label-warning,
+#v2Cont .badge-warning,
+#v2Cont .yellow {
+	background: #FFAA31 !important
+}
+#v2Cont .label-success,
+#v2Cont .badge-success,
+#v2Cont .green {
+	background: #68AF27 !important
+}
+#v2Cont .label-important,
+#v2Cont .label-important,
+#v2Cont .red {
+	background: #C22439 !important
+}
+#v2Cont .purple {
+	background: #673499 !important
+}
+#v2Cont .orange {
+	background: #D53F26 !important
+}
+#v2Cont .cblue {
+	color: #009AD7 !important
+}
+#v2Cont .cyellow {
+	color: #FFAA31 !important
+}
+#v2Cont .cgreen {
+	color: #68AF27 !important
+}
+#v2Cont .cred {
+	color: #C22439 !important
+}
+#v2Cont .cdblue {
+	color: #005683 !important
+}
+#v2Cont .cpurple {
+	color: #673499 !important
+}
+#v2Cont .corange {
+	color: #D53F26 !important
+}
+#v2Cont .blblue {
+	border-left-color: #009AD7 !important
+}
+#v2Cont .blyellow {
+	border-left-color: #FFAA31 !important
+}
+#v2Cont .blgreen {
+	border-left-color: #68AF27 !important
+}
+#v2Cont .blred {
+	border-left-color: #C22439 !important
+}
+#v2Cont .bldblue {
+	border-left-color: #005683 !important
+}
+#v2Cont .blpurple {
+	border-left-color: #673499 !important
+}
+#v2Cont .blorange {
+	border-left-color: #D53F26 !important
+}
+#v2Cont .block .head.blue *,
+#v2Cont .block .head.yellow *,
+#v2Cont .block .head.green *,
+#v2Cont .block .head.red *,
+#v2Cont .block .head.dblue *,
+#v2Cont .block .head.purple *,
+#v2Cont .block .head.orange * {
+	color: #FFF !important;
+	border-color: #FFF !important
+}
+#v2Cont .btn {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 0px;
+	background: #009AD7;
+	color: #F9F9F9;
+	text-shadow: none;
+	margin-bottom: 3px
+}
+#v2Cont .btn:hover,
+#v2Cont .btn-primary:active,
+#v2Cont .btn[disabled],
+#v2Cont .btn.disabled {
+	background: #008DC4;
+	color: #FFF
+}
+#v2Cont .btn-primary {
+	background: #005683
+}
+#v2Cont .btn-primary:hover,
+#v2Cont .btn-primary:active,
+#v2Cont .btn-primary.active {
+	background: #00486F
+}
+#v2Cont .btn-info {
+	background: #FFAA31
+}
+#v2Cont .btn-info:hover,
+#v2Cont .btn-info:active,
+#v2Cont .btn-info.active {
+	background: #FF990F
+}
+#v2Cont .btn-success {
+	background: #68AF27
+}
+#v2Cont .btn-success:hover,
+#v2Cont .btn-success:active,
+#v2Cont .btn-success.active {
+	background: #5A9922
+}
+#v2Cont .btn-warning {
+	background: #D53F26
+}
+#v2Cont .btn-warning:hover,
+#v2Cont .btn-warning:active,
+#v2Cont .btn-warning.active {
+	background: #CC3E24
+}
+#v2Cont .btn-danger {
+	background: #C22439
+}
+#v2Cont .btn-danger:hover,
+#v2Cont .btn-danger:active,
+#v2Cont .btn-danger.active {
+	background: #AA2031
+}
+#v2Cont .btn-inverse {
+	background: #222
+}
+#v2Cont .btn-inverse:hover,
+#v2Cont .btn-inverse:active,
+#v2Cont .btn-inverse.active {
+	background: #1A1A1D
+}
+#v2Cont .btn-link {
+	background: transparent;
+	color: #333
+}
+#v2Cont .btn-link:hover,
+#v2Cont .btn-link:active,
+#v2Cont .btn-link.active {
+	background: transparent;
+	color: #333
+}
+#v2Cont .btn.disabled,
+#v2Cont .open .btn.dropdown-toggle {
+	background-color: #008DC4 !important
+}
+#v2Cont .btn.btn-primary.disabled,
+#v2Cont .open .btn-primary.dropdown-toggle {
+	background-color: #00486F !important
+}
+#v2Cont .btn.btn-info.disabled,
+#v2Cont .open .btn-info.dropdown-toggle {
+	background-color: #FF990F !important
+}
+#v2Cont .btn.btn-success.disabled,
+#v2Cont .open .btn-success.dropdown-toggle {
+	background-color: #5A9922 !important
+}
+#v2Cont .btn.btn-warning.disabled,
+#v2Cont .open .btn-warning.dropdown-toggle {
+	background-color: #CC3E24 !important
+}
+#v2Cont .btn.btn-danger.disabled,
+#v2Cont .open .btn-danger.dropdown-toggle {
+	background-color: #AA2031 !important
+}
+#v2Cont .btn.btn-inverse.disabled,
+#v2Cont .open .btn-inverse.dropdown-toggle {
+	background-color: #1A1A1D !important
+}
+#v2Cont .btn.btn-link.disabled,
+#v2Cont .open .btn-link.dropdown-toggle {
+	background-color: transparent !important
+}

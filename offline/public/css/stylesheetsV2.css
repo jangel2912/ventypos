@@ -1,0 +1,200 @@
+/*@import "bootstrap/bootstrap.min.css";*/
+@import "bootstrap/bootstrapB.min.css";
+@import "bootstrap/bootstrap-responsive.min.css";
+@import "bootstrap/bootstrap-fileupload.css";
+@import "jquery/ui.css";
+@import "epiechart/jquery.easy-pie-chart.css";
+@import "fancybox/jquery.fancybox.css";
+@import "uniform/uniform.css";
+@import "select/select.css";
+@import "tagsinput/jquery.tagsinput.css";
+@import "multiselect/multiselect.css";
+@import "validation/validationEngine.jquery.css";
+@import "stepywizard/jquery.stepy.css";
+@import "mcustomscrollbar/mCustomScrollbar.css";
+@import "cleditor/cleditor.css";
+@import "shbrush/shCoreDefault.css";
+@import "shbrush/shThemeDefault.css";
+@import "../js/plugins/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css";
+@import "fullcalendar/fullcalendar.css";
+@import "icons.css";
+@import "styling.css";
+@import "stylesheet.css";
+@import "opera.css";
+@import "mystyles.css";
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #v2Cont .data,
+    #v2Cont .data-fluid {
+        overflow: hidden;
+        overflow-x: scroll
+    }
+}
+
+@media only screen and (min-width: 321px) {}
+
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (max-width: 767px) {
+    #v2Cont .body .navigation>li {
+        position:relative
+    }
+    #v2Cont .body .navigation > li .sub {
+        left: 0px;
+        top: 70px;
+        z-index: 100;
+        padding: 0px
+    }
+    #v2Cont .body .navigation > li .sub li {
+        float: left;
+        background: #F5F5F5;
+        margin: 0px
+    }
+    #v2Cont .body .navigation > li .sub li a {
+        padding: 5px 10px;
+        width: 180px;
+        float: left
+    }
+    #v2Cont .popup.active {
+        position: fixed;
+        left: 50%;
+        margin-left: -150px
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0px
+    }
+    #v2Cont .body .navigation .button {
+        width: 55px;
+        height: 55px
+    }
+    #v2Cont .body .navigation .arrow {
+        display: none
+    }
+    #v2Cont .body .navigation .button .icon {
+        width: 55px;
+        height: 44px;
+        margin: 0px;
+        border: 0px
+    }
+    #v2Cont .body .navigation .button .name {
+        font-size: 10px
+    }
+    #v2Cont .data,
+    #v2Cont .data-fluid {
+        overflow: hidden;
+        overflow-x: scroll
+    }
+    #v2Cont .body .content .widget {
+        margin-bottom: 0px
+    }
+    #v2Cont .body .content .widget:nth-child(1n) {
+        margin-right: 3px
+    }
+}
+@media only screen and (max-width: 1023px) {
+    #v2Cont .body .navigation .button {
+        width: 55px;
+        height: 55px
+    }
+    #v2Cont .body .navigation .arrow {
+        display: none
+    }
+    #v2Cont .body .navigation .button .icon {
+        width: 55px;
+        height: 44px;
+        margin: 0px;
+        border: 0px
+    }
+    #v2Cont .body .navigation .button .name {
+        font-size: 10px
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #v2Cont .body .navigation .button .icon {
+        padding-top: 4px;
+        height: 41px
+    }
+    #v2Cont .body .content .widget {
+        margin-bottom: 0px
+    }
+    #v2Cont .body .content .widget:nth-child(2n) {
+        margin-right: 0px
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #v2Cont .wrapper {
+        margin: 0px 10px
+    }
+    #v2Cont .body {
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        z-index: 10
+    }
+    #v2Cont .sidebar {
+        left: 0px;
+        top: 10px;
+        width: 100%;
+        z-index: 20;
+        display: none;
+        background: url('../img/wpoint8.png') left top repeat;
+        padding: 0px
+    }
+    #v2Cont .sidebar .close {
+        display: block
+    }
+    #v2Cont .sidebar .top,
+    #v2Cont .sidebar .widget {
+        display: none
+    }
+    #v2Cont .sidebar .navigation {
+        float: left;
+        width: 100%
+    }
+    #v2Cont .sidebar .navigation li {
+        padding: 3px 10px;
+        display: block;
+        clear: both
+    }
+    #v2Cont .sidebar .navigation > li > a,
+    #v2Cont .sidebar .navigation li ul,
+    #v2Cont .sidebar .navigation li ul li,
+    #v2Cont .sidebar .navigation li ul li a {
+        width: 100%
+    }
+    #v2Cont .sidebar .navigation li ul {
+        display: none
+    }
+    #v2Cont .sidebar .navigation li.active ul {
+        display: block;
+        float: left
+    }
+    #v2Cont .sidebar .navigation li ul li {
+        clear: both
+    }
+    #v2Cont .sidebar .navigation > li > a,
+    #v2Cont .sidebar .navigation li ul > li a {
+        color: #333
+    }
+    #v2Cont .sidebar .navigation > li > a.active,
+    #v2Cont .sidebar .navigation > li > a:hover,
+    #v2Cont .sidebar .navigation li ul > li a.active,
+    #v2Cont .sidebar .navigation li ul > li a:hover {
+        color: #000
+    }
+    #v2Cont .body .navigation {
+        height: auto
+    }
+    #v2Cont .body .navigation .buttons .sbutton.navButton {
+        display: inline-block
+    }
+}
+@media only screen and (max-width: 1279px) {
+    #v2Cont .wrapper.fixed {
+        width: auto;
+        margin: 0px 10px
+    }
+}

@@ -1,0 +1,333 @@
+<html>
+<head>
+        <title>Vendty - Administra tu negocio desde la nube</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Administra tu negocio desde la nube"><meta name="keywords" content="sistema de punto de ventas, sistema de facturación, software de inventario,software para punto de ventas">
+
+
+
+        <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/custome.css" type="text/css" media="all">
+
+
+
+        <style type="text/css">
+
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <header id="gk-head" class="" style="display: block; ">
+            <div class="gk-page" id="gk-header-nav">
+                <div id="menu_container">
+                    <h1>
+                        <a href="http://vendty.com" class="cssLogo"><small></small></a>
+                    </h1>
+                    <h3 style=" width: auto; float: left;margin: 14px 0px 0px 0px;font-size: 24px;">
+                        <strong><small id="txtEstado" style="color: #E40303;">Offline</small></strong>
+                    </h3>
+
+                    <a id="btnSincronizar" href="javascript:void(0);" class="" style="width: auto; float: left; margin: 10px 0px 0px 20px; display:none;" >			 
+                        <small style="background-color: rgb(0, 178, 0); color: #fff;font-size: 18px;border-radius: 4px;padding: 5px 10px 10px 10px;">Sincronizar</small>
+                    </a>			 
+                    <a id="btnExportar" href="#" class="" style="width: auto; float: left; margin: 10px 0px 0px 20px; display:none;" >			 
+                        <small style="background-color: rgb(0, 178, 0); color: #fff;font-size: 18px;border-radius: 4px;padding: 5px 10px 10px 10px;">Exportar</small>
+                    </a>
+
+                    <ul id="main-menu" class="menu gk_normal" style="height: 10px;">
+                        <li id="menu-item-1073" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1073 haschild"><a href="../index.php/ventasOffline/nuevo/" >Vender</a></li>
+                        <li id="menu-item-1073" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1073 haschild"><a href="../index.php/ventasOffline/ventas/" >Facturas</a></li>
+                        <!--
+                                <li id="menu-item-1089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1089"><a href="#" onmouseover="">Productos</a></li>
+                                <li id="menu-item-2682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2682"><a href="#" onmouseover="">Clientes</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="gk-header-mod" class="gk-page" style=" width:100%; height:100%; background-image: url(img/vendtyOff.jpg); background-position: center; background-size: cover; ">
+
+        </div>
+
+        <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
+
+        <!--  OFFLINE -->
+        <script type='text/javascript' src="../public/v2/appVentasOffline.js"></script>
+        <script>
+
+            //Redirect en caso de no teer slash al final
+            var url = document.URL;
+            if (url.slice(-1) != "/") {
+                window.location.replace(url + "/");
+            }
+
+            var appOffline;
+            appOffline = new classVentaOffline();
+            appOffline.conectarDB(function () { });
+
+        </script>	
+
+        <script type="text/javascript">
+
+            //==================================================================
+            // SWITCH  PARA DETECTAR SI ESTAMOS CONECTADOS ONLINE
+            //==================================================================
+
+            function isOnline() {
+                $("#btnSincronizar").show();
+                $("#txtEstado").css("color", "#52A5E2");
+                $("#txtEstado").html("ONLINE");
+            }
+
+            function isOffline() {
+                $("#btnSincronizar").hide();
+                $("#btnExportar").hide();
+                $("#txtEstado").css("color", "#E40303");
+                $("#txtEstado").html("Offline");
+
+            }
+
+            //-------------------------------------------------------------------------
+            if (navigator.onLine)
+                isOnline();
+            else
+                isOffline();
+            window.addEventListener("online", function (e) {
+                location.reload();
+            }, false);
+            window.addEventListener("offline", function (e) {
+                location.reload();
+            }, false);
+            //-------------------------------------------------------------------------
+
+            //==================================================================
+            // 	  FIN SWITCH
+            //==================================================================		
+
+
+            function sincronizar(){
+                
+                appOffline.queryVentas(function () {
+
+                    var objVentas = appOffline.getObjVentas();
+                    var objClientes = appOffline.getObjClientesOffline();
+
+
+                        if (objClientes.length == 0) {
+                           //alert("No hay ventas para sincronizar");
+                           //window.location = "../index.php/ventas";
+                        }else {
+
+                           $("#btnSincronizar small").html("Sincronizando...");
+                           $("#btnSincronizar small").css("background-color", "rgb(0, 139, 178)");                                    
+
+                            var datos = { data : objClientes };
+                            $.ajax({
+
+                                url: '../index.php/ventasOffline/importarClientes',
+                                dataType: 'json',
+                                type: 'POST',
+                                data: datos,
+                                async: false,
+                                error: function (jqXHR, textStatus, errorThrown) {
+									console.log(" Erro importar Cliente ");
+                                    console.log(jqXHR)
+                                    console.log(textStatus)
+                                    console.log(errorThrown)
+                                    $("#btnSincronizar small").html("Error. Inicie Sesión");
+                                    $("#btnSincronizar small").css("background-color", "rgb(178, 0, 0)");
+                                    alert("Por favor inicie sesión en VendTy para sincronizar la información");
+                                },
+                                success: function (data) {
+
+                                    console.log( "Cliente: " );
+                                    console.log( data );
+
+                                    if (data.success == "true") {
+                                        appOffline.truncateClientes(function () {});
+
+                                        if (objVentas.length == 0) {
+                                            alert("clientes Sincronizados");
+                                            window.location = "../index.php/clientes";
+                                        }
+
+                                    } else {
+                                        alert("Ha ocurrido un error Cliente no creado");
+                                    }
+                                }
+                            });
+
+                        }
+
+
+
+                        if (objVentas.length == 0) {
+                            if (objClientes.length == 0) { 
+                                alert("No hay ventas para sincronizar");
+                                window.location = "../index.php/";
+                            }
+
+                        }else {
+
+                           $("#btnSincronizar small").html("Sincronizando...");
+                           $("#btnSincronizar small").css("background-color", "rgb(0, 139, 178)");                                    
+
+                           var datos = { data : objVentas };                        
+                           $.ajax({
+
+                               url: '../index.php/ventasOffline/importar',
+                               dataType: 'json',
+                               type: 'POST',
+                               data: datos,
+                               async: false,
+                               error: function (jqXHR, textStatus, errorThrown) {
+									console.log(" Erro importar Venta ");
+                                    console.log(jqXHR)
+                                    console.log(textStatus)
+                                    console.log(errorThrown)							   
+                                   $("#btnSincronizar small").html("Error. Inicie Sesión");
+                                   $("#btnSincronizar small").css("background-color", "rgb(178, 0, 0)");
+                                   alert("Por favor inicie sesión en VendTy para sincronizar la información");
+                               },
+                               success: function (data) {
+
+                                   console.log( "Ventas: " );
+                                   console.log( data );
+
+                                   if (data.success == "true") {
+
+                                       appOffline.truncateVentas(function () {
+                                           alert("Ventas Sincronizadas Correctamente");
+                                           window.location = "../index.php/ventas";
+                                       });
+
+                                   } else {
+                                       alert("Ha ocurrido un error venta no creada");
+                                   }
+
+                               }
+                           });
+
+                        }
+
+
+
+                });
+
+            }
+
+
+            $("#btnSincronizar").click(function () {
+
+                $.ajax({
+
+                    url: '../index.php/ventasOffline/queryOfflineAjax',
+                    dataType: 'json',
+                    type: 'POST',                                
+                    async: false,
+                    error: function (jqXHR, textStatus, errorThrown) {
+						console.log(" Erro Coneccion");
+                        console.log(jqXHR)
+                        console.log(textStatus)
+                        console.log(errorThrown)
+                        $("#btnSincronizar small").html("Error. Inicie Sesión");
+                        $("#btnSincronizar small").css("background-color", "rgb(178, 0, 0)");
+                        alert("Por favor inicie sesión en VendTy para sincronizar la información");
+                    },
+                    success: function (data) {
+
+                        if (data.status == "false") {
+                            alert("Aplicación Offline Desactivada");
+                        } else {
+                            
+                            sincronizar();
+                            
+                        }
+                    }
+                });
+                            
+                
+
+
+            });
+            
+
+            /*
+            function grabar(datos, i, n) {
+
+                setTimeout(function () {
+
+                    $.ajax({
+                        url: '../index.php/ventas/nuevo',
+                        dataType: 'json',
+                        type: 'POST',
+                        data: datos,
+                        async: false,
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            $("#btnSincronizar small").html("Error. Inicie Sesión");
+                            $("#btnSincronizar small").css("background-color", "rgb(178, 0, 0)");
+                            alert("Por favor inicie sesión en VendTy para sincronizar la información");
+                        }
+                        , success: function (data) {
+                            console.log(data)
+                            if (data.success == true) {
+                                console.log(datos);
+                                if (i == n) {
+
+                                    appOffline.truncateVentas(function () {
+                                        alert("Ventas Sincronizadas Correctamente");
+                                        window.location = "../index.php/ventas";
+                                    });
+
+                                }
+
+                            } else {
+                                alert("Ha ocurrido un error venta no creada");
+                            }
+
+
+                        }
+                    });
+
+                }, i * 1200);
+
+            }
+
+            $("#btnSincronizar").click(function () {
+
+                appOffline.queryVentas(function () {
+
+                    var objVentas = appOffline.getObjVentas();
+
+                    if (objVentas.length == 0) {
+
+                        alert("No hay ventas para sincronizar");
+                        window.location = "../index.php/ventas";
+
+                    } else {
+
+                        $("#btnSincronizar small").html("Sincronizando...");
+                        $("#btnSincronizar small").css("background-color", "rgb(0, 139, 178)");
+
+                        for (var i = 0; i < objVentas.length; i++) {
+
+                            var datos = JSON.parse(objVentas[i]["obj"]);
+
+                            grabar(datos, i, (objVentas.length - 1));
+
+                        }
+
+                    }
+
+                });
+
+            });
+            */
+
+        </script>
+    </body>
+</html>

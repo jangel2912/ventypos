@@ -1,0 +1,23 @@
+version: 0.2
+
+env:
+  variables:
+    APP_ENV: "production"
+    API_VENDTY: "https://apipos.vendty.com/api/v1/"
+
+phases:
+  install:
+      runtime-versions:
+          docker: 19
+  post_build:
+      commands:
+          - pwd
+          - echo "var api_url = \"https://apipos.vendty.com/api/v1\";" >> assets/api_url.js
+          - printf '[{"name":"vendty-pos","imageUri":"367794562090.dkr.ecr.us-west-2.amazonaws.com/vendty-pos:latest"}]' > imagedefinitions.json
+          - printf '<?php phpinfo();' > info.php
+          - ls -ltr
+artifacts:
+  files:
+    - '**/*'
+  name: builds
+  discard-paths: no

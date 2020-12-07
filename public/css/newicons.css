@@ -1,0 +1,280 @@
+body,h1,h2,h3,h4,h5,h6{
+  font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  /*font-size: 13px !important;*/
+}
+.navbar-toolbar .iconimg{
+    position: relative;
+    width: 15%;    
+    padding-top: 0px;
+    margin-right: 5px;
+}
+.navbar-default .navbar-toolbar>li>a{
+    margin: 0 !important; 
+    padding-top: 10px !important;
+    
+}                           
+.navbar-collapse li {
+    width: 150px; 
+    height: 50px; 
+    margin-right: 5px;  
+    text-align: right;                            
+}
+.btnB, .btnG, .btnGis{
+    font-size: 13px;
+}
+.navbar-toolbar .btnG {
+    color: #5ca745 !important;       
+    font-weight: bold;                         
+}
+.navbar-toolbar .btnB {
+    color: #FFF !important; 
+    font-weight: 600 !important;                           
+}
+.navbar-toolbar .btnGis {
+    color: #939598 !important; 
+    font-weight: bold;                               
+}
+.navbar-default .navbar-toolbar>li>a:focus, .navbar-default .navbar-toolbar>li>a:hover {
+    background-color: transparent !important;
+}
+.iconimg{
+    width:27%;
+    margin: 5px
+}
+
+.navbar-collapse li.li-user {    
+    width: 100%;
+    text-align: left;    
+    margin-right: 5px !important;
+    
+}
+.navbar-collapse li.li-medios {
+    max-width: 30px !important;   
+    text-align: center;    
+    margin-right: 5px !important;
+   
+    
+}
+
+.navbar-collapse li.li-medios img {
+    width: 70%;
+    filter: invert(0.5);
+}
+.navbar-collapse li.li-salir{
+  width:80px; 
+  /*background-color: #5ca745; */
+  background-color: rgba(80, 80, 80, 0.75); 
+  color: #fff !important;
+  margin-right: 0px;
+  font-weight: 500;  
+  text-align: center;
+}
+.navbar-toolbar li.li-user .iconimg{
+  width: 5%;
+  margin-top: 0;
+}
+.nav-tabs {
+    border-bottom: 0px solid #e4eaec;
+}
+
+.access{
+  margin-top: 1% !important;
+}  
+.access a:hover{color: rgb(104, 175, 39);}
+.access a{
+  color: #5ca745;
+  font-weight: 700; 
+  padding: 5px;
+  font-size: 13px;
+}
+.access img {
+  width: 20%;
+}
+.icon-index{height: 14px;}
+.tab-content #graficos_home{
+  margin-top: -4%;
+}
+.navbar .nav>li>a{
+    text-shadow: 0 0px 0 #fff !important;
+}
+
+/*menu principal*/
+.menu-title{
+    /*text-transform: capitalize !important;*/
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 13px;
+}
+.page-header .icon {   
+    width: 40px !important;
+    height: 40px !important;   
+    border: 1px solid #999 !important;   
+    padding: 0.5% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    display: block;
+    margin-top: 0px !important;
+}
+
+.page-header .icon img{  
+    width: 100%;
+    margin: auto;
+}
+.page-header .icon .sub-title{  
+    color: #939598 !important; 
+    font-weight: bold !important; 
+    font-size: 26px;
+}
+
+/**acciones en las tablas**/
+.iconacciones{
+    width: 80%;
+    margin: auto;
+}
+.label-default:hover, .default:hover {
+    background: #5ca745 !important;
+    border: 1px solid #717b80 !important;
+    color: #ffffff !important;
+    transition: 0.5s;
+}
+
+/***configuraciones*/
+.tab_config img{
+    width: 10%;
+
+}
+
+/**subtitulo en tablas*/
+.body .content .block .head .icon {
+    width: 23px !important;
+    height: 23px !important;
+}
+.body .content .block .head .icon img {
+    width: 60% !important;
+    margin: auto;
+    margin-top: -40%;
+}
+
+/****add-on****/
+.input-append .add-on, .input-prepend .add-on {
+    height: auto !important;    
+}
+
+.icon.iconbotones{
+    width: 30px;
+    margin: auto;
+}
+
+/****tooltips**/
+/*
+[data-tooltip]:before {
+    width: 120px !important;
+    left: 30% !important;
+}
+[data-tooltip]:after{
+    left: 13% !important;
+}
+.acciones[data-tooltip]:after{
+    left: 50% !important;
+}
+.acciones [data-tooltip]:before {
+    width: 100px !important;
+    left: 30% !important;
+}*/
+
+/**btn tablas***/
+.btnacciones{
+    text-align: right !important;
+}
+
+/***btones principales */
+.btnimagenes{
+    width: 40px !important;
+}
+
+.btnderecha{
+    float: right !important;
+    text-align: center !important;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.input-append span.add-on{
+    width: 4.5% !important;
+}
+
+/**input-group-btn*/
+.ventas .input-group-addon, .ventas .input-group-btn,.input-prepend span.add-on, .iconimgventas{
+    width: 15% !important;
+}
+
+.iconimginformes{
+    width: 10% !important;
+}
+
+input:checked + .slider {
+    background-color: #5ca745 !important;
+}
+
+form table td, th {
+    padding: 5px;
+}
+
+.table.aTable, .table.aTable th{
+    text-align: center;
+}
+
+.successfull{
+    background: #5ca745 !important;
+    border: 1px solid #717b80 !important;
+    color: #ffffff !important;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****jose ******/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html  manifest="vendty.appcache" type="text/cache-manifest">
+	<head>
+	</head>
+	<body>		
+		<script>					
+						
+			var appCache = window.applicationCache;
+
+			function updateCache(){
+				appCache.update(); 
+			}
+			
+			function backupTablas(){
+		
+			}
+			
+			// Para actualizar a la cache mas reciente sin necesidad de recargar toda la aplicacion
+			appCache.addEventListener("updateready",function(){ 
+                            try {
+                                appCache.swapCache();
+                                console.log("CacheSwaped :)");
+                            }catch(error) {
+                                console.log(error.code);
+                            }				
+                            parent.sincronizarTablas();	
+			}, false);
+			
+			appCache.oncached = function (e) {
+				console.log("Cached :)");
+				parent.sincronizarTablas();	
+			};
+			appCache.onerror = function (e) {				
+				console.log(e);
+				console.log("Error al guardar aplicación offline");
+				//parent.location.reload();
+			};
+			
+		</script>	
+    </body>
+</html>

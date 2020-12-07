@@ -1,0 +1,157 @@
+CACHE MANIFEST
+# aqui va la fecha
+
+CACHE:
+ # aqui va el logo
+ ../index.php/ventasOffline/nuevo/
+ ../index.php/ventasOffline/nuevo
+ ../index.php/ventasOffline/ventas/
+ ../index.php/ventasOffline/ventas
+ index.html?2
+ 
+../../public/img/vendtyShop.jpg
+../vendtyShop.jpg
+ img/logo_normal.png
+ img/vendtyOff.jpg
+ fonts/fonts.css
+ fonts/f1.woff2
+ fonts/f2.woff2
+ fonts/f3.woff2
+ css/custome.css
+ js/attrchange.js
+ 
+ js/jquery-1.9.1.min.js
+ ../../public/js/plugins/jquery/jquery-1.9.1.min.js
+ ../../public/export/js/jquery.dataTables.min.js
+ ../../public/js/plugins/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css
+ 
+ ../../public/v2/global/fonts/glyphicons/glyphicons-halflings-regular.woff2
+ ../../public/v2/global/fonts/glyphicons/glyphicons-halflings-regular.woff2
+ ../../public/css/fonts/icomoon.woff
+ ../../public/css/fonts/icomoon.woff
+ ../../public/v2/global/fonts/web-icons/web-iconsd622.woff2?v=0.2.3
+ ../../public/v2/global/fonts/glyphicons/glyphicons-halflings-regular.woff
+ ../../public/v2/global/fonts/glyphicons/glyphicons-halflings-regular.woff
+ ../../public/css/fonts/icomoon.ttf
+ ../../public/css/fonts/icomoon.ttf
+ ../../public/v2/global/fonts/web-icons/web-iconsd622.woff?v=0.2.3
+ ../../public/v2/global/fonts/glyphicons/glyphicons-halflings-regular.ttf
+ ../../public/v2/global/fonts/glyphicons/glyphicons-halflings-regular.ttf
+ ../../public/v2/global/fonts/web-icons/web-iconsd622.ttf?v=0.2.3
+ 
+ ../../public/css/bootstrap/bootstrap.min.css
+ ../../public/css/bootstrap/bootstrap-responsive.min.css
+ ../../public/css/bootstrap/bootstrap-fileupload.css
+ ../../public/css/jquery/ui.css
+ ../../public/css/epiechart/jquery.easy-pie-chart.css
+ ../../public/css/fancybox/jquery.fancybox.css
+ ../../public/css/uniform/uniform.css
+ ../../public/css/select/select.css
+ ../../public/css/tagsinput/jquery.tagsinput.css
+ ../../public/css/multiselect/multiselect.css
+ ../../public/css/validation/validationEngine.jquery.css
+ ../../public/css/stepywizard/jquery.stepy.css
+ ../../public/css/mcustomscrollbar/mCustomScrollbar.css
+ ../../public/css/cleditor/cleditor.css
+ ../../public/css/shbrush/shCoreDefault.css
+ ../../public/css/shbrush/shThemeDefault.css
+ ../../public/css/ ../js/plugins/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css
+ ../../public/css/fullcalendar/fullcalendar.css
+ ../../public/css/icons.css
+ ../../public/css/styling.css
+ ../../public/css/stylesheet.css
+ ../../public/css/opera.css
+ ../../public/css/mystyles.css
+ 
+ ../../public/css/stylesheets.css
+ ../../public/js/plugins/jquery/jquery-ui-1.10.1.custom.min.js
+ ../../public/js/plugins/jquery/jquery-migrate-1.1.1.min.js
+ ../../public/js/plugins/jquery/globalize.js
+ ../../public/js/plugins/other/excanvas.js
+ ../../public/js/plugins/other/jquery.mousewheel.min.js
+ ../../public/js/plugins/bootstrap/bootstrap.min.js
+ ../../public/js/plugins/cookies/jquery.cookies.2.2.0.min.js
+ ../../public/js/plugins/uniform/jquery.uniform.min.js
+ ../../public/js/plugins/validationEngine/languages/jquery.validationEngine-es.js
+ ../../public/js/plugins/validationEngine/jquery.validationEngine.js   
+ ../../public/js/plugins/shbrush/XRegExp.js
+ ../../public/js/plugins/shbrush/shCore.js
+ ../../public/js/plugins/shbrush/shBrushXml.js
+ ../../public/js/plugins/shbrush/shBrushJScript.js
+ ../../public/js/plugins/shbrush/shBrushCss.js
+ ../../public/js/plugins.js
+ ../../public/js/actions.js 
+ ../../public/css/ventas.css
+ ../../public/fancybox/jquery.fancybox.css
+ ../../public/css/multiselect/multiselect.css
+ ../../public/v2/global/css/bootstrap.min081a.css?v2.0.0
+ ../../public/v2/global/css/bootstrap-extend.min081a.css?v2.0.0
+ ../../public/v2/base/assets/css/site.min081a.css?v2.0.0
+ ../../public/v2/global/vendor/animsition/animsition.min081a.css?v2.0.0
+ ../../public/v2/global/vendor/asscrollable/asScrollable.min081a.css?v2.0.0
+ ../../public/v2/global/vendor/switchery/switchery.min081a.css?v2.0.0
+ ../../public/v2/global/vendor/slidepanel/slidePanel.min081a.css?v2.0.0
+ ../../public/v2/global/vendor/flag-icon-css/flag-icon.min081a.css?v2.0.0
+ ../../public/v2/guia/introjs.css
+ ../../public/v2/guia/intro.js
+ ../../public/v2/base/assets/examples/css/dashboard/v1.min081a.css?v2.0.0
+ ../../public/v2/global/fonts/web-icons/web-icons.min081a.css?v2.0.0
+ ../../public/v2/global/fonts/glyphicons/glyphicons.min.css?v2.0.0
+ ../../public/v2/global/fonts/weather-icons/weather-icons.min081a.css?v2.0.0
+ ../../public/v2/global/vendor/modernizr/modernizr.min.js
+ ../../public/v2/global/vendor/breakpoints/breakpoints.min.js
+ ../../public/v2/global/vendor/animsition/animsition.min.js
+ ../../public/v2/global/vendor/asscroll/jquery-asScroll.min.js
+ ../../public/v2/global/vendor/mousewheel/jquery.mousewheel.min.js
+ ../../public/v2/global/vendor/asscrollable/jquery.asScrollable.all.min.js
+ ../../public/v2/global/vendor/ashoverscroll/jquery-asHoverScroll.min.js
+ ../../public/v2/global/vendor/switchery/switchery.min.js
+ ../../public/v2/global/vendor/slidepanel/jquery-slidePanel.min.js
+ ../../public/v2/global/js/core.min.js
+ ../../public/v2/base/assets/js/site.min.js
+ ../../public/v2/base/assets/js/sections/menu.min.js
+ ../../public/v2/base/assets/js/sections/menubar.min.js
+ ../../public/v2/base/assets/js/sections/gridmenu.min.js
+ ../../public/v2/base/assets/js/sections/sidebar.min.js
+ ../../public/v2/global/js/components/asscrollable.min.js
+ ../../public/v2/global/js/components/animsition.min.js
+ ../../public/v2/global/js/components/slidepanel.min.js
+ ../../public/v2/global/js/components/switchery.min.js
+ ../../public/fancybox/jquery.fancybox.js
+ ../../public/js/plugins/multiselect/jquery.multi-select.js
+
+ ../../public/v2/img/logo_solo.png
+ js/appVentasOffline.js
+ ../../public/v2/appVentasOffline.js
+ ../../public/js/ventasOffline.js
+ ../offline/js/attrchange.js
+ 
+ imprimir/css/ticket.css
+ imprimir/css/ticket_print.css
+ imprimir/_imprime_clasica.html
+ imprimir/_imprime_ticket_cafeterias.html
+ imprimir/_imprimefacturamatricial.html
+ imprimir/_imprimemediacarta.html
+ imprimir/_imprimemediacarta_especial_1.html
+ imprimir/_imprimemediacarta_especial_2.html
+ imprimir/_imprimemediacarta_ingles.html
+ imprimir/_imprimemediacarta_ingles_completa.html
+ imprimir/_imprimemediacarta_logo_izq.html
+ imprimir/_imprimemediacarta_logo_redondo.html
+ imprimir/_imprimemediacarta2.html
+ imprimir/_imprimemediacarta3.html
+ imprimir/_imprimemediacarta4.html
+ imprimir/imprime_ticket_58mm.html
+ imprimir/imprime_ticket_atributos.html
+ 
+
+ 
+NETWORK:
+*
+
+FALLBACK:
+ imprimir/imprime_ticket_atributos.html/  imprimir/imprime_ticket_atributos.html
+ imprimir/imprime_ticket_atributos.html  imprimir/imprime_ticket_atributos.html
+ ../offline index.html
+ ../offline/ index.html
+ ../index.php/ventasOffline/nuevo ../index.php/ventasOffline/nuevo

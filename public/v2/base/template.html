@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+
+  <title>Dashboard | Remark Admin Template</title>
+
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../global/css/bootstrap.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/css/bootstrap-extend.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="assets/css/site.min081a.css?v2.0.0">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../global/vendor/animsition/animsition.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/vendor/switchery/switchery.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/vendor/intro-js/introjs.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.min081a.css?v2.0.0">
+
+  <!-- Plugins For This Page -->
+  
+
+  <!-- Page -->
+  <link rel="stylesheet" href="assets/examples/css/dashboard/v1.min081a.css?v2.0.0">
+  
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min081a.css?v2.0.0">
+  <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min081a.css?v2.0.0">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+  <link rel="stylesheet" href="../global/fonts/weather-icons/weather-icons.min081a.css?v2.0.0">
+  
+  
+  <style>  
+	.tableCont {
+		width: 100%;
+		display:table;
+		table-layout: fixed;
+		overflow: hidden;
+	}
+
+	.cellIzq {
+		display:table-cell;
+		width: 20px;
+		overflow: hidden;
+	}
+
+	.cellDer {
+		display:table-cell;
+		width: 100%;
+		overflow: hidden;
+	}  
+	.cellContent {
+		width: 100%;
+		height: 100%;
+		float: left;
+	}
+
+	.page-content{
+		padding: 20px;
+	}
+	
+	.panel{
+		padding: 10px;
+	}
+
+	</style>
+
+  <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  <script src="../global/vendor/modernizr/modernizr.min.js"></script>
+  <script src="../global/vendor/breakpoints/breakpoints.min.js"></script>
+  <script>
+    Breakpoints();
+  </script>
+
+</head>
+<body class="dashboard">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <img class="navbar-brand-logo" src="assets/images/logo.png" title="Remark">
+        <span class="navbar-brand-text"> VendTy</span>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
+      data-toggle="collapse">
+        <span class="sr-only">Toggle Search</span>
+        <i class="icon wb-search" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="hidden-float" id="toggleMenubar">
+            <a data-toggle="menubar" href="#" role="button">
+              <i class="icon wb-menu"></i>
+            </a>
+          </li>
+
+
+          <li class="dropdown dropdown-fw dropdown-mega">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+            data-animation="fade" role="button"><strong>Menú</strong> <i class="icon wb-chevron-down-mini" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu" role="menu">
+				
+			  
+              <li role="presentation">
+                <div class="mega-content">
+                  <div class="row">
+				  
+                    <div class="col-sm-2">
+                      <h5>General</h5>
+                      <ul class="blocks-1">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li><i class="wb-chevron-right-mini" aria-hidden="true"></i>
+                              <a href="advanced/animation.html"><strong>Inicio</strong></a>
+                            </li>
+                            <li><i class="wb-chevron-right-mini" aria-hidden="true"></i>
+                              <a href="uikit/buttons.html"><strong>Informes</strong></a>
+                            </li>                           
+                            <li><i class="wb-chevron-right-mini" aria-hidden="true"></i>
+                              <a href="uikit/buttons.html"><strong>Configuración</strong></a>
+                            </li>                           							
+                          </ul>
+                        </li>
+                        
+                      </ul>
+                    </div>
+					
+                    <div class="col-sm-2">
+                      <h5>Ventas</h5>
+                      <ul class="blocks-1">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Histórico de ventas</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Nueva venta</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Ventas anuladas</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Pagos por cobrar</a></div>
+							  </div>
+                            </li>
+                          </ul>
+                        </li>                        
+                      </ul>
+                    </div>                    
+					
+                    <div class="col-sm-2">
+                      <h5>Productos</h5>
+                      <ul class="blocks-1">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Productos</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Categorías</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Inventario</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Materiales</a></div>
+							  </div>
+                            </li> 
+                          </ul>
+                        </li>                        
+                      </ul>
+                    </div> 
+
+                    <div class="col-sm-2">
+                      <h5>Cotización</h5>
+                      <ul class="blocks-1">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Cotización</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Nueva cotización</a></div>
+							  </div>
+                            </li>
+                          </ul>
+                        </li>                        
+                      </ul>
+                    </div> 
+
+                    <div class="col-sm-2">
+                      <h5>Compras</h5>
+                      <ul class="blocks-1">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Gastos</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Orden de compra</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Informe de orden de compra</a></div>
+							  </div>
+                            </li>
+                          </ul>
+                        </li>                        
+                      </ul>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <h5>Contactos</h5>
+                      <ul class="blocks-1">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Clientes</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Vendedores</a></div>
+							  </div>
+                            </li>
+                            <li>
+							  <div class="tableCont">
+								  <div class="cellIzq"><span class="wb-chevron-right-mini" aria-hidden="true"></span></div>
+								  <div class="cellDer"><a href="uikit/buttons.html">Proveedores</a></div>
+							  </div>
+                            </li>
+                          </ul>
+                        </li>                        
+                      </ul>
+                    </div>                    
+					
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar -->
+
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+          
+          <li class="dropdown" style="width:170px;">
+            <a style="padding:10px 0px 0px 0px;" class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+            data-animation="scale-up" role="button">
+              <span class="avatar avatar-online" style="width:50px; height:50px;"> 
+                <img src="../global/portraits/5.jpg" alt="" style="width:50px; height:50px;">
+				<span style="margin-left:10px;"> <strong>Mi Empresa <span class="icon wb-chevron-down-mini" aria-hidden="true"></span> </strong></span>
+                
+              </span>
+            </a>
+            <ul class="dropdown-menu" role="menu">             
+              <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Configuración</a>
+              </li>
+              <li class="divider" role="presentation"></li>
+              <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Salir</a>
+              </li>
+            </ul>
+          </li>
+          
+
+		  
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon wb-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  <div class="site-menubar">
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu">
+		  
+            <li class="site-menu-category">Menú</li>
+			
+            <li class="site-menu-item">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-home" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Inicio</h5></span>
+              </a>
+            </li>
+			
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-shopping-cart" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Ventas</h5></span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="layouts/menu-collapsed.html">
+                    <span class="site-menu-title">Histórico de Ventas</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="layouts/menu-collapsed-alt.html">
+                    <span class="site-menu-title">Nueva Venta</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="layouts/menu-expended.html">
+                    <span class="site-menu-title">Ventas Anuladas</span>
+                  </a>
+                </li>
+                <li class="site-menu-item" title="Pagos por cobrar a clientes">
+                  <a class="animsition-link" href="layouts/grids.html">
+                    <span class="site-menu-title">Pagos por cobrar</span>
+					
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+			
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-payment" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Productos</h5></span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="pages/gallery.html">
+                    <span class="site-menu-title">Productos</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="pages/faq.html">
+                    <span class="site-menu-title">Categorías</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="pages/gallery.html">
+                    <span class="site-menu-title">Inventario</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="pages/gallery-grid.html">
+                    <span class="site-menu-title">Materiales</span>
+                  </a>
+                </li>                
+              </ul>
+            </li>
+			
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-stats-bars" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Cotización</h5></span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">			  
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="uikit/buttons.html">
+                    <span class="site-menu-title">Cotización</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="uikit/dropdowns.html">
+                    <span class="site-menu-title">Nueva Cotización</span>
+                  </a>
+                </li>                
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-briefcase" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Compras</h5></span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">			  
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="uikit/buttons.html">
+                    <span class="site-menu-title">Gastos</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="uikit/dropdowns.html">
+                    <span class="site-menu-title">Orden de compra</span>
+                  </a>
+                </li>
+                <li class="site-menu-item" title="Informe de orden de compra">
+                  <a class="animsition-link" href="uikit/dropdowns.html">
+                    <span class="site-menu-title">Informe orden de compra</span>
+                  </a>
+                </li>				
+              </ul>
+            </li>
+
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Contactos</h5></span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">			  
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="uikit/buttons.html">
+                    <span class="site-menu-title">Clientes</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="uikit/dropdowns.html">
+                    <span class="site-menu-title">Vendedores</span>
+                  </a>
+                </li>
+                <li class="site-menu-item" title="Informe de orden de compra">
+                  <a class="animsition-link" href="uikit/dropdowns.html">
+                    <span class="site-menu-title">Proveedores</span>
+                  </a>
+                </li>				
+              </ul>
+            </li>
+
+            <li class="site-menu-item">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-graph-up" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Informes</h5></span>
+              </a>
+            </li>      
+			
+			<li class="site-menu-item">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon wb-settings" aria-hidden="true"></i>
+                <span class="site-menu-title"><h5>Configuración</h5></span>
+              </a>
+            </li> 
+			
+          </ul>
+
+          <div class="site-menubar-section">
+		  
+            <h5>
+              Meta Diaria
+              <span class="pull-right">30%</span>
+            </h5>
+			
+            <div class="progress progress-xs">
+              <div class="progress-bar active" style="width: 30%;" role="progressbar"></div>
+            </div>			
+			
+          </div>
+		  
+        </div>
+      </div>
+    </div>
+	
+  </div>
+  
+  
+
+  <!-- Page -->
+  <div class="page animsition">
+	<div class="page-content">
+		<div class="panel">
+			sadasd
+		</div>
+	</div>    
+  </div>
+  <!-- End Page -->
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-legal">© 2015 <a href="javascript:void(0)">Vendty</a></div>
+    <div class="site-footer-right">
+      
+    </div>
+  </footer>
+  
+
+  
+
+
+  <!-- Core  -->
+  <script src="../global/vendor/jquery/jquery.min.js"></script>
+  <script src="../global/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../global/vendor/animsition/animsition.min.js"></script>
+  <script src="../global/vendor/asscroll/jquery-asScroll.min.js"></script>
+  <script src="../global/vendor/mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="../global/vendor/asscrollable/jquery.asScrollable.all.min.js"></script>
+  <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="../global/vendor/switchery/switchery.min.js"></script>
+  
+  <script src="../global/vendor/slidepanel/jquery-slidePanel.min.js"></script>
+
+  <!-- Plugins For This Page -->
+  
+
+  <!-- Scripts -->
+  <script src="../global/js/core.min.js"></script>
+  <script src="assets/js/site.min.js"></script>
+
+  <script src="assets/js/sections/menu.min.js"></script>
+  <script src="assets/js/sections/menubar.min.js"></script>
+  <script src="assets/js/sections/gridmenu.min.js"></script>
+  <script src="assets/js/sections/sidebar.min.js"></script>
+
+
+  <script src="../global/js/components/asscrollable.min.js"></script>
+  <script src="../global/js/components/animsition.min.js"></script>
+  <script src="../global/js/components/slidepanel.min.js"></script>
+  <script src="../global/js/components/switchery.min.js"></script>
+
+  
+
+
+	<script>
+	$(document).ready(function($) {
+		Site.run()
+	});
+	</script>
+ 
+</body>
+
+
+<!-- Mirrored from getbootstrapadmin.com/remark/base/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Dec 2015 18:56:30 GMT -->
+</html>

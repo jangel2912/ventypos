@@ -1,0 +1,11 @@
+{
+    "name" : "vendty/vendty-pos",
+    "description": "Sistema POS",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "require" : {
+        "epayco/epayco-php" : "dev-master",
+        "aws/aws-sdk-php": "^3.158"
+    }
+}

@@ -1,0 +1,91 @@
+ 
+  #menucel{
+    display: none; 
+    background-color: #505050 !important;
+    text-align: center !important;   
+    width:35% !important; 
+    height: 100% !important; 
+    z-index: 100000 !important;
+    position: fixed !important;
+    font-size: 16px !important;
+    overflow: auto !important;  
+  }
+  #menucel .navbar-nav>li>a {
+    padding: 15px 20px !important;
+    font-size: 12px !important;
+    color: #fff !important;
+  }
+  #menucel .navbar-nav>li, .navbar-nav>li>a {
+    height: 80px !important;    
+    float: none;
+  }
+  
+
+  #menucel .navbar-nav>li>a:hover, 
+ {
+    color: #fff !important;
+    background: #403f3f !important;
+    border: 0 !important;
+}
+
+
+#menucel .dropdown-menu {
+  background-color: #505050 !important;  
+  color:#fff !important;
+  text-align: center !important;
+
+}
+
+  .navbar-vendty .fa {
+    padding: 7px;
+    text-align: center;
+  }
+  .navbar.navbar-vendty  {
+    border: none;
+  }
+  
+  .navbar-vendty .navbar-nav>li{
+    border-top: 1px solid rgb(50, 50, 50) !important;
+  }
+  
+  .dropdown-menu>li>a {
+    color: #fff !important;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: 0;
+  }    
+
+  #menucel li>a.open, #menucel .sub-menus>a:focus {
+    background-color: #62cb31 !important;
+  }
+
+  #menucel li a:hover:not(.open) {
+    background-color: #555 !important;
+    color: white !important;
+  }
+
+  #menucel .sub-menus{
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+
+  #menucel .navbar-nav .open .dropdown-menu {
+     position: absolute;    
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.site-menubar-fold .page, .site-menubar-fold .site-footer {
+   margin-left: 0px; 
+}
+.modal-backdrop {
+  z-index: 0;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+  z-index: 11 !important;
+}
+.navbar-minimize-mobile,.navbar-minimize-mobile:hover,#header .navbar-header {
+  background-color: #505050 !important;
+} 
+

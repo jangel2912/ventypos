@@ -1,0 +1,98 @@
+/**
+ * Estilos login
+ */
+
+.form-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 30px 30px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.form-login input {
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.form-login p.text-error {
+    color: white !important;
+}
+
+.form-login button {
+    background-color: #62CB31;
+    font-size: 18px !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-login button.btn:hover {
+    background-color: #5ABD2C;
+}
+
+.form-login a {
+    color: white;
+    float: right;
+}
+
+.login_filter:after {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(33, 33, 33, .6);
+}
+
+.login .row-form {
+    width: 300px;
+    padding: 8px 0;
+}
+
+.login::before {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.login_1::before {
+    background-image: url('../../img/backgrounds/bannerhome_1.png');
+}
+
+.login_2::before {
+    background-image: url('../../img/backgrounds/bannerhome_2.png');
+}
+
+.login_3::before {
+    background-image: url('../../img/backgrounds/bannerhome_3.png');
+}
+
+.login_4::before {
+    background-image: url('../../img/backgrounds/bannerhome_4.png');
+}
+
+.login_5::before {
+    background-image: url('../../img/backgrounds/bannerhome_5.png');
+}
+
+.login_6::before {
+    background-image: url('../../img/backgrounds/bannerhome_6.png');
+}
+
+.login-header {
+    position: relative;
+    padding: 2em;
+    text-align: center;
+}

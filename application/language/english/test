@@ -1,0 +1,256 @@
+<NotepadPlus>
+    <Project name="SIMA">
+        <Folder name="cache">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\cache\index.html" />
+        </Folder>
+        <Folder name="config">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\autoload.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\config.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\constants.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\database.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\doctypes.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\foreign_chars.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\form_validation.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\hooks.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\index.html" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\ion_auth.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\layout.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\migration.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\mimes.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\profiler.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\routes.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\smileys.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\config\user_agents.php" />
+        </Folder>
+        <Folder name="controllers">
+            <Folder name="backend">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\backend\dashboard.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\backend\db_config.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\backend\menu.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\backend\sub_menu.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\backend\usuarios.php" />
+            </Folder>
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\auth.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\clientes.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\facturas.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\Fixture.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\frontend.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\impuestos.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\index.html" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\miempresa.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\pagos.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\presupuestos.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\productos.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\proformas.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\proveedores.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\servicios.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\usuarios.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\controllers\welcome.php" />
+        </Folder>
+        <Folder name="core">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\core\index.html" />
+        </Folder>
+        <Folder name="errors">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\errors\error_404.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\errors\error_db.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\errors\error_general.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\errors\error_php.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\errors\index.html" />
+        </Folder>
+        <Folder name="helpers">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\helpers\index.html" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\helpers\layout_helper.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\helpers\menu_helper.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\helpers\MY_form_helper.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\helpers\MY_language_helper.php" />
+        </Folder>
+        <Folder name="hooks">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\hooks\index.html" />
+        </Folder>
+        <Folder name="language">
+            <Folder name="english">
+                <File name="auth_lang.php" />
+                <File name="index.html" />
+                <File name="ion_auth_lang.php" />
+                <File name="sima_lang.php" />
+            </Folder>
+            <Folder name="spanish">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\language\spanish\auth_lang.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\language\spanish\form_validation_lang.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\language\spanish\ion_auth_lang.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\language\spanish\sima_lang.php" />
+            </Folder>
+        </Folder>
+        <Folder name="libraries">
+            <Folder name="facebook">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\facebook\base_facebook.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\facebook\facebook.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\facebook\fb_ca_chain_bundle.crt" />
+            </Folder>
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\Bcrypt.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\index.html" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\Ion_auth.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\libraries\layout.php" />
+        </Folder>
+        <Folder name="logs">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\logs\index.html" />
+        </Folder>
+        <Folder name="migrations">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\migrations\001_install_ion_auth.php" />
+        </Folder>
+        <Folder name="models">
+            <Folder name="backend">
+                <Folder name="db_config">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\backend\db_config\db_config_model.php" />
+                </Folder>
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\backend\menu_model.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\backend\sub_menu_model.php" />
+            </Folder>
+            <Folder name="fixture">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\fixture\Fixture_model.php" />
+            </Folder>
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\clientes_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\facturas_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\impuestos_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\index.html" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\ion_auth_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\ion_auth_mongodb_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\miempresa_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\pagos_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\pais_provincia_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\presupuestos_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\productos_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\proformas_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\proveedores_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\servicios_model.php" />
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\models\usuarios_model.php" />
+        </Folder>
+        <Folder name="third_party">
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\third_party\index.html" />
+        </Folder>
+        <Folder name="views">
+            <Folder name="auth">
+                <Folder name="email">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\email\activate.tpl.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\email\forgot_password.tpl.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\email\new_password.tpl.php" />
+                </Folder>
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\change_password.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\create_group.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\create_user.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\deactivate_user.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\edit_group.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\edit_user.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\fblogin.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\forgot_password.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\login.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\register.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\auth\reset_password.php" />
+            </Folder>
+            <Folder name="backend">
+                <Folder name="dashboard">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\dashboard\index.php" />
+                </Folder>
+                <Folder name="db_config">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\db_config\index.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\db_config\nuevo.php" />
+                </Folder>
+                <Folder name="menu">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\menu\editar.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\menu\index.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\menu\nuevo.php" />
+                </Folder>
+                <Folder name="sub_menu">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\sub_menu\editar.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\sub_menu\index.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\sub_menu\nuevo.php" />
+                </Folder>
+                <Folder name="usuarios">
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\usuarios\create_group.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\usuarios\create_user.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\usuarios\deactivate_user.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\usuarios\edit_group.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\usuarios\edit_user.php" />
+                    <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\backend\usuarios\index.php" />
+                </Folder>
+            </Folder>
+            <Folder name="clientes">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\clientes\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\clientes\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\clientes\nuevo.php" />
+            </Folder>
+            <Folder name="facturas">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\facturas\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\facturas\index_pagadas.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\facturas\index_pendientes.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\facturas\nuevo.php" />
+            </Folder>
+            <Folder name="fixture">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\fixture\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\fixture\insertar_producto.php" />
+            </Folder>
+            <Folder name="frontend">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\frontend\acceso_limitado.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\frontend\index.php" />
+            </Folder>
+            <Folder name="impuestos">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\impuestos\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\impuestos\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\impuestos\nuevo.php" />
+            </Folder>
+            <Folder name="layouts">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\layouts\footer.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\layouts\footerLogin.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\layouts\header.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\layouts\headerLogin.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\layouts\headerMember.php" />
+            </Folder>
+            <Folder name="miempresa">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\miempresa\index.php" />
+            </Folder>
+            <Folder name="pagos">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\pagos\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\pagos\nuevo.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\pagos\ver_pago.php" />
+            </Folder>
+            <Folder name="presupuestos">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\presupuestos\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\presupuestos\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\presupuestos\nuevo.php" />
+            </Folder>
+            <Folder name="productos">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\productos\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\productos\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\productos\nuevo.php" />
+            </Folder>
+            <Folder name="proformas">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\proformas\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\proformas\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\proformas\nuevo.php" />
+            </Folder>
+            <Folder name="proveedores">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\proveedores\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\proveedores\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\proveedores\nuevo.php" />
+            </Folder>
+            <Folder name="provincias">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\provincias\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\provincias\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\provincias\nuevo.php" />
+            </Folder>
+            <Folder name="servicios">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\servicios\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\servicios\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\servicios\nuevo.php" />
+            </Folder>
+            <Folder name="usuarios">
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\usuarios\editar.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\usuarios\index.php" />
+                <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\usuarios\nuevo.php" />
+            </Folder>
+            <File name="D:\mowes_portable\mowes_portable\www\sima\application\views\index.html" />
+        </Folder>
+        <File name="D:\mowes_portable\mowes_portable\www\sima\application\index.html" />
+    </Project>
+</NotepadPlus>
